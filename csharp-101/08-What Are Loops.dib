@@ -1,0 +1,112 @@
+#!markdown
+
+# What Are Loops?
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=z31m5Up_gSQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=10) for this module.
+
+#!markdown
+
+Loops are a way to repeat an action multiple times. We use `while` to do that. 
+> Try out this first loop
+
+#!csharp
+
+int counter = 0;
+while (counter < 10)
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+}
+
+#!markdown
+
+So what happened here? `While` checks if the condition ('counter < 10') is true. If it is, it goes through the loop. Then it checks it again. It will keep going through the loop until the condition is false.   
+When figuring out branches and loops, it can be helpful to put code into human language. This code is saying: "Set up counter to equal 0. While the counter is less than 10, print 'Hello World! the counter is {counter}' and then increase the counter by 1". 
+
+## Infinite loops
+It's easy to accidentally make an infinite loop. **Editors note: We can't tell them to create an infinite loop, because the notebook doesn't ever stop itself** TIf you hit an infinite loop, you have two options: you can always exit out of your program, or you can hit ctrl+c.
+
+> Challenge: We can't show one on this notebook, because thecode doesn't catch itself, but as a challenge, try making an infinite loop in VS Studio! What are different ways you might accidentally make it infinite? It can be scary to make a mistake, but always know you can ctrl+c or exit the program. 
+
+#!markdown
+
+## Do
+
+You can also make a loop with `do`
+> try out the following code, and see if theres anything different between it and the while loop.
+
+#!csharp
+
+int counter = 0;
+do
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+} while (counter < 10);
+
+#!markdown
+
+Hmm, nothing much seems to different, right? 
+
+> Try changing the conditional to `(counter < 0)` on both codes. What happens?
+
+In the `while` loop, nothing is printed out, but in the `do` loop, we get one print out. The `do` loop does the action first, then checks the conditional. In contrast, the `while` loop chaecks the conditional first, then does an action. 
+
+#!markdown
+
+## For Loop
+`For` is one the most common loop. It will repeat an action for a specific amount of turns. It can look a little intimidating 
+> Before we diect the code, let's run the following for loop just to see it working
+
+#!csharp
+
+for(int counter = 0; counter < 10; counter++)
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+}
+
+#!markdown
+
+### What's in the parentheses?
+Theres three parts in the for loop parentheses: `int counter = 0`, `counter < 10`, and `counter++`  
+You can think of them as the start point, the end point, and the step size.   
+`int counter = 0` is just setting up counter. We're tarting at 0.  
+`counter < 10` is the conditional that gets checked at the start of every loop. once the conditional is false (in this case, once counter is not less than 10), the loop is done and the code moves on.  
+`counter++` is increasing counter by one, taking one step closer to the end. the step is taken at the en of each loop.
+> Try messing with the `for` loop set up. How does it change? 
+
+#!markdown
+
+# Playground
+Play around with what you've learned! Here's some starting ideas:  
+> Make a loop that counts backwards from 10.
+>
+> Make a loop that counts forward by 2.
+>
+> Make a loop that counts from 7 to 22. 
+> 
+> Bonus: Make the above will all three loop types.
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue Learning
+There are plenty more resources out there to learn!
+> Learn the next module: [Combining Branches and Loops](https://www.youtube.com/watch?v=qK7tUpaOXi8&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=11)
+> 
+> Review the previous module: ["Hello World" Explained](https://www.youtube.com/watch?v=qmZ2RVZ4giY&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=9)
+>
+> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+>
+> Read the documentation: **Get the documentation link**
+>
+
+# Other Resources
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
+>
+> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+>
+> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

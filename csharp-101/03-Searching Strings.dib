@@ -1,0 +1,73 @@
+#!markdown
+
+# Searching Strings
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=4) for this module.
+
+#!markdown
+
+## Contains
+Does your string contain another string within it? You can use `Constains` to find out!  
+What value does `Contains` return? A `boolean`, or true/false value.
+> Run the following code.   
+> What else would or wouldn't be contained?   
+> Does case matter?  
+> Can you make the result of a `Contain` a variable of it's own? **does this line make sense?**
+
+#!csharp
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.Contains("goodbye"));
+Console.WriteLine(songLyrics.Contains("greetings"));
+
+#!markdown
+
+## StartsWith and EndsWith
+`StartsWith` and `EndsWith` are similar methods, but more specific.
+> Now you try!  
+> In the code below, try searching the line to see if it starts with "you" or "I".  
+> Next, see if the code ends with "hello" or "goodbye"
+
+#!csharp
+
+string songLyrics = "You say goodbye, and I say hello";
+
+#!markdown
+
+# Playground
+Play around with what you've learned! Here's some starting ideas:  
+> How many lines say hello?  
+> Which lines start with "You"?  
+> Which lines end with "no"?  
+> Think back to the previous module. Can you make some lines all upper case and some lines all lower case?
+> If you change case, how does that affect `Contains`?
+
+#!csharp
+
+Console.WriteLine("Playground");
+String line1 = "You say yes, I say no";
+String line2 = "You say stop and I say go, go, go";
+String line3 = "Oh, no";
+String line4 = "You say goodbye and I say hello";
+String line5 = "Hello, hello";
+String line6 = "I don't know why you say goodbye, I say hello";
+
+#!markdown
+
+# Continue Learning
+There are plenty more resources out there to learn!
+> Learn the next module: [Numbers and Integer Math](https://www.youtube.com/watch?v=jEE0pWTq54U&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=5)
+> 
+> Review the previous module: [The Basics of Strings](https://www.youtube.com/watch?v=JSpC7Cz64h0&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=3)
+>
+> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+>
+> Read the documentation: **Get the documentation link**
+
+
+# Other Resources
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
+>
+> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+>
+> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

@@ -1,0 +1,109 @@
+#!markdown
+
+# Search, Sort, and Index Lists
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=NJ5ghiutzfY&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=13) for this module.
+
+#!markdown
+
+## Search 
+In the last notebook, we learned how to find what item was stored at a specific index. Now, given an item, let's find out it's index.
+> Run the code
+>
+> What index is Sophia at?
+>
+> What index is "Scott" at?
+
+#!csharp
+
+using System;
+using System.Collections.Generic;
+var names = new List<string> { "Sophia", "Ana", "Jayme", "Bill" };
+string name = "Ana";
+var index = names.IndexOf(name);
+Console.WriteLine($"Found {name} at {index}");
+
+#!markdown
+
+## What's -1 mean?
+If `IndexOf()` returns -1, then that means it couldn't find the item in the list. In fact, we can make a little if statement that works in not finding the item:
+> Run the code 
+>
+> Try out a few different names
+
+#!csharp
+
+var names = new List<string> { "Sophia", "Ana", "Jayme", "Bill" };
+string name = "Scott";
+var index = names.IndexOf(name);
+if(index == -1){
+    Console.WriteLine($"{name} not found");
+} else {
+    Console.WriteLine($"Found {names[index]} at {index}");
+}
+
+#!markdown
+
+## Sort
+
+Until now, we've just been putting in names in random order. But sometimes it's nice to have a list be sorted. `Sort()` takes a list and organizes it. It looks at the variable types and organizes in the most resonable way it can see - if it's stings, it sorts alphabetically, if it's numbers it organizes from smallest to largest.  
+  
+Note that you done need to write`sortedList = names.Sort()`, you just have to write `names.Sort()`. `Sort()` changes the list itself, and you don't have to save the action to a new object. 
+
+> Run the code!
+>
+> Feel free to add in any other names to see them get sorted
+
+#!csharp
+
+var names = new List<string> { "Sophia", "Ana", "Jayme", "Bill" };
+Console.WriteLine("Pre Sorting:");
+foreach(var name in names )
+{
+    Console.WriteLine(name);
+}
+
+names.Sort();
+
+Console.WriteLine();
+Console.WriteLine("Post Sorting:");
+foreach(var name in names )
+{
+    Console.WriteLine(name);
+}
+
+#!markdown
+
+# Playground
+Play around with what you've learned! Here's some starting ideas:  
+
+> Make a list of groeries, then sort them! what is the index that 'Carrots' ius at?
+>
+> Try making a list of numbers! Do they sort in the way you expect?
+>
+> Print out the lists that you've made
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue Learning
+There are plenty more resources out there to learn!
+> Learn the next module: [Arrays, List, and Collections](https://www.youtube.com/watch?v=qLeF_wpnVto&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=12)
+> 
+> Review the previous module: [Lists of Other Types](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14)
+>
+> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+>
+> Read the [documentation](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTN3dUZpMmZyWmdvemRuN3JYWkJSMzNna1JjUXxBQ3Jtc0tsY3RxR2VXbjdGXzFKMUZtbXVwV29zdDdRYkt3TlNnV3BIZzVQVVBfT3gxaW50QVQ4eHY4OU44dFBnSTRnUDNUOTVmN1AwcldDTVZUMGktQ3ZYT2cycHJLZ2RzSXZqUnpNOVh4OGd3UUVXNi1xeDRORQ&q=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fcsharp%2Ftutorials%2Fintro-to-csharp%2Farrays-and-collections%3F%26WT.mc_id%3DEducationalcsharp-c9-scottha) 
+>
+
+
+# Other Resources
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
+>
+> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+>
+> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

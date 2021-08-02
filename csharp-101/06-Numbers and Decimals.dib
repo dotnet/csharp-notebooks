@@ -1,0 +1,67 @@
+#!markdown
+
+# Numbers and Decimals
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=kdKcpF9roeU&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=7) for this module.
+
+#!markdown
+
+## Working With Fixed Point types (Editor Note: Video talks about fixed point types, website talks about decimal types? Is there a preference in which is taught?)
+the `Decimal` type is similar to `double`s. They don't have as big a range, but they do have much higher precision. 
+> What's the range of a decimal type?
+
+#!csharp
+
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+
+#!markdown
+
+> How do doubles and decimals compare in precision?
+
+#!csharp
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+
+#!markdown
+
+You can see that a decimals have a higher precision than doubles. 
+
+#!markdown
+
+# Playground
+Play around with what you've learned! Here's some starting ideas:  
+> There are other number types in C#, one of which is `short`. Compare the range and precision of `short`s to the other number types
+>
+> Can you find the area of a circle with a radius 2.5 inches? What does the answer look like when you change number types, such as int, short, and decimal. Hint: You can write `Math.PI` as pi, instead of writing the answer out
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue Learning
+There are plenty more resources out there to learn!
+> Learn the next module: [Branches(if)](https://www.youtube.com/watch?v=y4OTe8LSokg&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=8)
+> 
+> Review the previous module: [Numbers and Integer Precision](https://www.youtube.com/watch?v=31EmPADtv4w&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=6)
+>
+> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+>
+> Read the documentation: **Get the documentation link**
+>
+
+# Other Resources
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
+>
+> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+>
+> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
