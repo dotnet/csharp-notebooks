@@ -6,9 +6,9 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=KT2VR7m19So&list=P
 
 ## What do I do with this notebook?
 This notebook is intended to help you learn the coding language C#. You can:
-- Work through these notebooks on their own
-- Work through them while watching the C# 101 videos 
-- Use these notebooks as prompts to write your own code in Visual Studio
+- Work through these notebooks on your own.
+- Work through them while watching the C# 101 videos.
+- Use these notebooks as prompts to write your own code in Visual Studio.
 
 
 ## What is C#?
@@ -16,7 +16,7 @@ It's a powerful and widely used programming language that you can use to make we
 
 ## C#: Hello World
 Let's write our first C# program! It outputs a string "Hello World" to the console.
-> hover your mouse over the code below. On the left side, a little "play" icon should whow up. click that, and the code will run!
+> Hover your mouse over the code below. On the left side, a little "play" icon should show up. Click that and the code will run!
 
 #!csharp
 
@@ -27,7 +27,7 @@ Console.WriteLine("Hello World!");
 `Console.WriteLine` is a method that is used to print a message to a text console. In this case, we specified "Hello World" as the output.
 
 # Declare and use variables
-A **variable** is a symbol you can use to run the same code with different values. For example, we can declare a new variable named `aFriend` that we can use with `Console.WriteLine` to outout a string. We can declare this variable use the full type `string` or by using the `var` keyword that will automatically figure out the type for us. 
+A **variable** is a symbol you can use to run the same code with different values. For example, we can declare a new variable named `aFriend` that we can use with `Console.WriteLine` to output a string. We can declare this variable by using the full type `string` or by using the `var` keyword that will automatically figure out the type for us. 
 
 > Go ahead an run the code below to see the output of **Jayme**. 
 >
@@ -41,7 +41,7 @@ Console.WriteLine(aFriend);
 #!markdown
 
 # Combining Strings
-You may have noticed that the word "Hello" was missing from the last code block. Let's fix it by combining multiple string together using `+` to create a new string that it output to the console.
+You may have noticed that the word "Hello" was missing from the last code block. Let's fix it by combining multiple string together using `+` to create a new string that outputs to the console.
 > Run the code to write out a friendly welcome!
 
 #!csharp
@@ -51,7 +51,7 @@ Console.WriteLine("Hello " + aFriend + "!");
 #!markdown
 
 # String Interpolation
-We just used `+` to build a new string from a **variable** and a **constant**. There is a better way to do this by placing the variable between `{`and `}` to tell C# to replace that text with the value of the variable. This is called string interpolation We can then add a `$` before the openign quote to enable string interpolation for the string.
+We just used `+` to build a new string from a **variable** and a **constant**. There is a better way to do this by placing the variable between `{`and `}` to tell C# to replace that text with the value of the variable. This is called string interpolation. We can then add a `$` before the opening quote to enable string interpolation for the string.
 
 #!csharp
 
@@ -67,13 +67,13 @@ You did it! You just created your first C# application and learned about combini
 # Playground: Try it yourself!
 Each module will have a little "playground" at the end. This is a space for you to try writing some code yourself, instead of looking at prewritten code. 
 Try out printing words and variables! Here are some prompts to try:
-> Print out a personal motto
+> Print out a personal motto.
 >
-> Make some variables with your favorite foods, and then write a little storyinvolving them.
+> Make some variables with your favorite foods, and then write a little story involving them.
 >
 > **Challenge!** 
 >
-> Make your own madlibs! Make a few variables that are verbs, nouns, etcetra, an then use them when you write a story. Have a friend decide the value of each variable, and read it to them for a laugh!
+> Make your own Mad Libs! Make a few variables that are verbs, nouns, etcetera, and then use them when you write a story. Have a friend decide the value of each variable and read it to them for a laugh!
 
 #!csharp
 
