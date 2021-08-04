@@ -5,7 +5,7 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=P
 
 #!markdown
 
-Here's what we have so far!
+Below is the code we've made so far. Balance is gotten by summing up the lists of transactions, but we havent written a way to add a transaction. This happens pleny of times in coding, where to make something more robust, you have to take a step back before going forward. 
 
 > Run the code cells below.
 
@@ -88,16 +88,11 @@ Console.WriteLine($"Account {account.Number} was created for {account.Owner} wit
 #!markdown
 
 ## #1: Adding Deposits
-(insert explanation)
-(explain exceptions)
+First things first, let's make a deposit function. This adding will make a transaction listing the amount, date, and a note that you're depositing, and then adds it to the transaction list.
 
-> Add this code inside MakeDeposit
+> Add this code inside MakeDeposit. 
 
 ```csharp
-    if (amount <= 0)
-    {
-        throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
-    }
     var deposit = new Transaction(amount, date, note);
     allTransactions.Add(deposit);
 ```
@@ -150,6 +145,21 @@ public class BankAccount
     }
 }
 
+#!markdown
+
+## #2: Exceptions:
+But what if someone tries to deposit negative money? That doesn't make logical sense, but currently the method allows for that. What we can do is make an exception. Before doing anything, we check that the amount deposited is more than 0. If it is, awesome, the code moves on to adding the transaction. If not, the code throws and Exception, where it stops the code and prints out the issue.  
+  
+> Place this code in the very beginning of the deposit method. 
+
+
+```csharp
+if (amount <= 0)
+    {
+        throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
+    }
+```
+
 #!csharp
 
 using System.Collections.Generic;
@@ -190,7 +200,10 @@ public class BankAccount
     // Functions
     public void MakeDeposit(decimal amount, DateTime date, string note)
     {
-        //Add code here!
+        //Add Code here!
+        
+        var deposit = new Transaction(amount, date, note);
+        allTransactions.Add(deposit);
     }
 
     public void MakeWithdrawal(decimal amount, DateTime date, string note)
@@ -200,8 +213,8 @@ public class BankAccount
 
 #!markdown
 
-## #2: Ading Withdrawal
-(Insert explanation)
+## #3: Ading Withdrawal
+Now we need to do the same thing for the withdrawal!
 
 > Add this code to MakeWithdrawal
 
@@ -274,8 +287,8 @@ public class BankAccount
 
 #!markdown
 
-## #3: Creating innitial deposit
-(insert explanation)
+## #4: Creating initial deposit
+Now that we have deposits and withdrawals, we can finally make an initial deposit again. What we'll do is create a deposit of the initial amount when we're first constructing the bank account. 
 
 > Add this code to the `BankAccount` Constructor
 
@@ -349,19 +362,8 @@ public class BankAccount
 
 #!markdown
 
-> Add the following code to your code test:
-
-#!csharp
-
-account.MakeWithdrawal(500, DateTime.Now, "Rent payment");
-Console.WriteLine(account.Balance);
-account.MakeDeposit(100, DateTime.Now, "Friend paid me back");
-Console.WriteLine(account.Balance);
-
-#!markdown
-
 # Check and test your work!
-Here's the code that we've created so far. Now, we can also create deposits and withdrawals! 
+There's some added line in the test code, because we can now make deposits and withdrawals. Let's test it out! 
 > Run the cells below, including the new stuff in the test code. 
 >
 > Make your own deposit and withdrawal. 
@@ -419,25 +421,26 @@ public class BankAccount
         this.Owner = name;
         this.Number = accountNumberSeed.ToString();
         accountNumberSeed++;
-        MakeDeposit(initialBalance, DateTime.Now, "Initial balance"); //(#3)
+        MakeDeposit(initialBalance, DateTime.Now, "Initial balance"); //(#4)
         
     }
 
     // Functions
     public void MakeDeposit(decimal amount, DateTime date, string note)
     {
-        //(#1)
+        //(#2)
         if (amount <= 0)
         {
             throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
         }
+        //(#1)
         var deposit = new Transaction(amount, date, note);
         allTransactions.Add(deposit);
     }
 
     public void MakeWithdrawal(decimal amount, DateTime date, string note)
     {
-        //(#2)
+        //(#3)
         if (amount <= 0)
         {
             throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
@@ -456,10 +459,35 @@ public class BankAccount
 var account = new BankAccount("Kendra", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} dollars");
 
-account.MakeWithdrawal(500, DateTime.Now, "Rent payment");
+account.MakeWithdrawal(500, DateTime.Now, "Rent payment");  //Added test code
 Console.WriteLine(account.Balance);
 account.MakeDeposit(100, DateTime.Now, "Friend paid me back");
 Console.WriteLine(account.Balance);
+
+#!markdown
+
+# Review:
+
+We did it! You've now sucessfully made a bank account class that has the following attributes:
+
+> It has a 10-digit number that uniquely identifies the bank account.
+>
+> It has a string that stores the name or names of the owners.
+>
+> The balance can be retrieved.
+>
+> It accepts deposits.
+>
+> It accepts withdrawals.
+>
+> The initial balance must be positive.
+>
+> Withdrawals cannot result in a negative balance.
+>
+
+## Extra credit:
+Now that we've created a bank account class, you can play around with it! Here's a challenge:
+> Create a way to list out the list of transactions, including the time and notes. 
 
 #!markdown
 
