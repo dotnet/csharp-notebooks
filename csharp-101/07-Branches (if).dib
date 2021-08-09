@@ -1,6 +1,7 @@
 #!markdown
 
 # Branches (if)
+
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=y4OTe8LSokg&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=8) for this module.
 
 **editors note: This video goes through downloading VS and starting up a program. Since this is already a visual studio code, I didn't include it, but I'm not sure if that's wanted.**
@@ -8,7 +9,9 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=y4OTe8LSokg&list=P
 #!markdown
 
 ## Basic If 
-If statements makes decisions. 
+
+If statements makes decisions.
+
 > Let's try out our first if statement:
 
 #!csharp
@@ -21,15 +24,15 @@ if (a + b > 10)
 #!markdown
 
 In words, this if statement is saying "if a plus b is greater than 10, write the line 'The anwer is greater than 10'". 
-> What would happen if a + b is less than 10? Try editing the above code to see. 
+> What would happen if a + b is less than 10? Try editing the above code to see.
 
-Did nothing happen? That's great! Since the the `conditions` (a + b is greater than 10) of the if statement weren't met, the code didn't go into the if statement, and therefore had nothing to print. 
+Did nothing happen? That's great! Since the the `conditions` (a + b is greater than 10) of the if statement weren't met, the code didn't go into the if statement, and therefore had nothing to print.
 
 #!markdown
 
 ## Whats a Condition?
 
-The `condition` is the statement in parentheses after the `if`. A `condition` is a `boolean`, which means it has to return a true or false. that means using symbols such as `>`, `<`, `<=`, `>=` or `==`. 
+The `condition` is the statement in parentheses after the `if`. A `condition` is a `boolean`, which means it has to return a true or false. that means using symbols such as `>`, `<`, `<=`, `>=` or `==`.
 > Practice boolean statements. Try out some different symbols and numbers to see the answer
 
 #!csharp
@@ -40,7 +43,9 @@ Console.WriteLine("This condition is " + outcome);
 #!markdown
 
 ## Else
-Before, if the conditions of the if statement weren't met, the entire if statement was skipped. But what if you want something to happen in both cases? `else` is what happens if the conditional comes out false. 
+
+Before, if the conditions of the if statement weren't met, the entire if statement was skipped. But what if you want something to happen in both cases? `else` is what happens if the conditional comes out false.
+
 > Run this code, and change the conditional a couple times to see the different outcomes
 
 #!csharp
@@ -54,8 +59,10 @@ else
 
 #!markdown
 
-## Multiline if statements
-What if you want more complex code in your if statements? That's great, just add curly braces around what you want done. 
+## Multiline If statements
+
+What if you want more complex code in your if statements? That's great, just add curly braces around what you want done.
+
 > try it out!
 
 #!csharp
@@ -76,13 +83,12 @@ else
 
 `&&` means "and". It's a way to link up multiple conditionals. You can also use `||` as "or".   
   
-  The if conditional above checks that adding a, b, and c up is greater than 10 AND that a equals b. If both are true, it goes into the if statement, but otherwise, it goes into the else part. 
-
-  
+  The if conditional above checks that adding a, b, and c up is greater than 10 AND that a equals b. If both are true, it goes into the if statement, but otherwise, it goes into the else part.
 
 #!markdown
 
 # Playground
+
 Play around with what you've learned! Here's some starting ideas:  
 > Try out the "or" symbol in place of the "and" in the code above. What do you need to do to get true vs false?
 >
@@ -97,9 +103,10 @@ Console.WriteLine("Playground");
 #!markdown
 
 # Continue Learning
+
 There are plenty more resources out there to learn!
 > Learn the next module: ["Hello World" Explained](https://www.youtube.com/watch?v=qmZ2RVZ4giY&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=9)
-> 
+>
 > Review the previous module: [Numbers and Decimals](https://www.youtube.com/watch?v=kdKcpF9roeU&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=7)
 >
 > Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
@@ -107,7 +114,10 @@ There are plenty more resources out there to learn!
 > Read the documentation: **Get the documentation link**
 >
 
+#!markdown
+
 # Other Resources
+
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >

@@ -1,16 +1,18 @@
 #!markdown
 
 # Objects and Classes
+
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16) for this module.
 
 #!markdown
 
 ## Object Oriented Programming
-Objects are a way to mimic the real world in coding. If you take the concept of a person, they can have a name, address, height, all of these properties that change from person to person. Object oriented coding packages that type of information, so that you can easily make a person with all those details.There's lots of stuff you can do with objects, but let's just start with the basics. 
+Objects are a way to mimic the real world in coding. If you take the concept of a person, they can have a name, address, height, all of these properties that change from person to person. Object oriented coding packages that type of information, so that you can easily make a person with all those details.There's lots of stuff you can do with objects, but let's just start with the basics.
 
 #!markdown
 
 ## Making a Bank
+
 Over the next few modules, we'll be making a bank account object. Over the next few modules, we'll make a bank account object with these attirbutes:  
 
 > It has a 10-digit number that uniquely identifies the bank account.
@@ -27,22 +29,22 @@ Over the next few modules, we'll be making a bank account object. Over the next 
 >
 > Withdrawals cannot result in a negative balance.
 >
- 
- We can categorize these goals: 
- - **properties**: details about the object (how much money it has, the name of the account)
- - **Actions**: things the object can do (accept deposits and withdrawels)
- - **Rules**: guidlines for the object so that it doesn't try to do impossible things (make sure that the account can never go negative)
+
+We can categorize these goals:
+
+- **properties**: details about the object (how much money it has, the name of the account)
+- **Actions**: things the object can do (accept deposits and withdrawels)
+- **Rules**: guidlines for the object so that it doesn't try to do impossible things (make sure that the account can never go negative)
 
 #!markdown
 
 ## Make it Yourself
-Below is a blank `BankAccount` object, that we're going to create. We're going to add in code step by step. 
+
+Below is a blank `BankAccount` object, that we're going to create. We're going to add in code step by step.
 
 #!markdown
 
 ## #1: Properties
-
-#!markdown
 
 Properties are a nice little list of values each object holds.  
 `get` and `set`: sometimes you want to only want a user to see a variable but not change it. other times you want the user to be able to change a variable. `get` lets you see the variable, `set` lets you change it. (right?)  
@@ -71,6 +73,7 @@ public class BankAccount
 #!markdown
 
 ## #2: Constructor
+
 This method is what creates a specific instance of an object. Making a `BankAccount` cclass, like we're doing now, is like making a template for all bank accounts. it's not a singular indiviual account. The constructor is what will make a singular account, with all the persons acual details. We give the constructor all the details we want for a secific account, and it assigns the details to the new object's properties.  
   
 `this` is a styling choice. it makes explicit that the variable "Owner" is the variable of that specific instance. In future, we'll have two instances of an object interact, and `this` will become a bit more explicitly helpful. you can also write `Owner` instead of `this.Owner` if you want!
@@ -105,9 +108,10 @@ public class BankAccount
 
 ## #3: Making an Instance
 
-Now that you have the code written out, lets see what happens if we make a `BankAccount`! 
+Now that you have the code written out, lets see what happens if we make a `BankAccount`!
+
 > Run the two code cells code below to create a specific bankaccount. Does it do what you expected?
-> 
+>
 > Change the code to make a bank account for yourself. How much money do you want in it?
 
 #!csharp
@@ -136,11 +140,13 @@ Console.WriteLine($"Account{account.Number} was created for {account.Owner} with
 #!markdown
 
 ## What about the `account.Owner`?
-You may have noticed that the code didn't print out anything for `account.Owner`. That's okay! We haven't put anything in yet. We'll be talking about it in the next module. 
+
+You may have noticed that the code didn't print out anything for `account.Owner`. That's okay! We haven't put anything in yet. We'll be talking about it in the next module.
 
 #!markdown
 
 ## #4: Functions
+
 Functions exist to do actions with an object or change the object variables. These two functions will make a deposit (add money) and make a withdrawal (take out money). We'll be adding stuff in the methods later, but for now we just want to add the empty versions
 
 > copy the functions below and add them to `BankAccount` under `//Functions`
@@ -176,6 +182,7 @@ public class BankAccount
 #!markdown
 
 # Review
+
 Here's the version of `BankAccount` we end up with in this module. We'll be adding more to it in the next module, but why don't you try out stuff, just to see what you need to learn?  
   
 > Cn you add a 10-digit code? What would your object need to know to make sure the code was unique?
@@ -183,8 +190,6 @@ Here's the version of `BankAccount` we end up with in this module. We'll be addi
 > Try out adding to the deposit function! What do you want it to do?
 >
 > How might you check that the initial balance is positive?
-
-  
 
 #!csharp
 
@@ -221,12 +226,13 @@ Console.WriteLine($"Account{account.Number} was created for {account.Owner} with
 #!markdown
 
 # Continue Learning
+
 There are plenty more resources out there to learn!
 > Go to the [next Notebook]()
-> 
+>
 > Go to the [previous Notebook]()
-> 
-> Watch the [video]() for this module: 
+>
+> Watch the [video]() for this module
 >
 > Read the [documentation]() for this module
 >
@@ -234,9 +240,10 @@ There are plenty more resources out there to learn!
 #!markdown
 
 # Resources
+
 Here's some more places to explore:
 > Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
-> 
+>
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >
 > [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)

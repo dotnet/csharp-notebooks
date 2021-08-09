@@ -1,11 +1,10 @@
 #!markdown
 
 # Methods and Exceptions
+
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) for this module.
 
-#!markdown
-
-Below is the code we've made so far. Balance is gotten by summing up the lists of transactions, but we havent written a way to add a transaction. This happens pleny of times in coding, where to make something more robust, you have to take a step back before going forward. 
+Below is the code we've made so far. Balance is gotten by summing up the lists of transactions, but we havent written a way to add a transaction. This happens pleny of times in coding, where to make something more robust, you have to take a step back before going forward.
 
 > Run the code cells below.
 
@@ -88,9 +87,10 @@ Console.WriteLine($"Account {account.Number} was created for {account.Owner} wit
 #!markdown
 
 ## #1: Adding Deposits
+
 First things first, let's make a deposit function. This adding will make a transaction listing the amount, date, and a note that you're depositing, and then adds it to the transaction list.
 
-> Add this code inside MakeDeposit. 
+> Add this code inside MakeDeposit.
 
 ```csharp
     var deposit = new Transaction(amount, date, note);
@@ -148,10 +148,10 @@ public class BankAccount
 #!markdown
 
 ## #2: Exceptions:
+
 But what if someone tries to deposit negative money? That doesn't make logical sense, but currently the method allows for that. What we can do is make an exception. Before doing anything, we check that the amount deposited is more than 0. If it is, awesome, the code moves on to adding the transaction. If not, the code throws and Exception, where it stops the code and prints out the issue.  
   
-> Place this code in the very beginning of the deposit method. 
-
+> Place this code in the very beginning of the deposit method.
 
 ```csharp
 if (amount <= 0)
@@ -214,6 +214,7 @@ public class BankAccount
 #!markdown
 
 ## #3: Ading Withdrawal
+
 Now we need to do the same thing for the withdrawal!
 
 > Add this code to MakeWithdrawal
@@ -288,7 +289,8 @@ public class BankAccount
 #!markdown
 
 ## #4: Creating initial deposit
-Now that we have deposits and withdrawals, we can finally make an initial deposit again. What we'll do is create a deposit of the initial amount when we're first constructing the bank account. 
+
+Now that we have deposits and withdrawals, we can finally make an initial deposit again. What we'll do is create a deposit of the initial amount when we're first constructing the bank account.
 
 > Add this code to the `BankAccount` Constructor
 
@@ -363,10 +365,12 @@ public class BankAccount
 #!markdown
 
 # Check and test your work!
-There's some added line in the test code, because we can now make deposits and withdrawals. Let's test it out! 
-> Run the cells below, including the new stuff in the test code. 
+
+There's some added line in the test code, because we can now make deposits and withdrawals. Let's test it out!
+
+> Run the cells below, including the new stuff in the test code.
 >
-> Make your own deposit and withdrawal. 
+> Make your own deposit and withdrawal.
 
 #!csharp
 
@@ -466,7 +470,7 @@ Console.WriteLine(account.Balance);
 
 #!markdown
 
-# Review:
+# Review
 
 We did it! You've now sucessfully made a bank account class that has the following attributes:
 
@@ -485,16 +489,18 @@ We did it! You've now sucessfully made a bank account class that has the followi
 > Withdrawals cannot result in a negative balance.
 >
 
-## Extra credit:
+## Extra Credit
+
 Now that we've created a bank account class, you can play around with it! Here's a challenge:
-> Create a way to list out the list of transactions, including the time and notes. 
+> Create a way to list out the list of transactions, including the time and notes.
 
 #!markdown
 
 # Continue Learning
+
 There are plenty more resources out there to learn!
 > Learn the next module: [Catching Exceptions]()
-> 
+>
 > Review the previous module: [Methods and Members]()
 >
 > Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
@@ -502,7 +508,10 @@ There are plenty more resources out there to learn!
 > Read the [documentation]()
 >
 
+#!markdown
+
 # Other Resources
+
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >

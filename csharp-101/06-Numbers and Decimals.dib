@@ -1,12 +1,15 @@
 #!markdown
 
 # Numbers and Decimals
+
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=kdKcpF9roeU&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=7) for this module.
 
 #!markdown
 
 ## Working With Fixed Point types (Editor Note: Video talks about fixed point types, website talks about decimal types? Is there a preference in which is taught?)
-the `Decimal` type is similar to `double`s. They don't have as big a range, but they do have much higher precision. 
+
+the `Decimal` type is similar to `double`s. They don't have as big a range, but they do have much higher precision.
+
 > What's the range of a decimal type?
 
 #!csharp
@@ -36,6 +39,7 @@ You can see that a decimals have a higher precision than doubles.
 #!markdown
 
 # Playground
+
 Play around with what you've learned! Here's some starting ideas:  
 > There are other number types in C#, one of which is `short`. Compare the range and precision of `short`s to the other number types
 >
@@ -48,9 +52,10 @@ Console.WriteLine("Playground");
 #!markdown
 
 # Continue Learning
+
 There are plenty more resources out there to learn!
 > Learn the next module: [Branches(if)](https://www.youtube.com/watch?v=y4OTe8LSokg&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=8)
-> 
+>
 > Review the previous module: [Numbers and Integer Precision](https://www.youtube.com/watch?v=31EmPADtv4w&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=6)
 >
 > Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
@@ -58,7 +63,10 @@ There are plenty more resources out there to learn!
 > Read the documentation: **Get the documentation link**
 >
 
+#!markdown
+
 # Other Resources
+
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >

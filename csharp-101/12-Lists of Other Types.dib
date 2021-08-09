@@ -1,24 +1,21 @@
 #!markdown
 
 # Lists of Other Types
-Watch the full [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module.
 
-#!markdown
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module.
 
 We've been practicing lits of strings, but you can make a list of anything! Lets go through a number example. 
 
 ## Fibonacci
+
 Fibonacci is a cool number sequence. It adds up the last two numbers up to make the next number. You start with 1 and 1  
 1 + 1 = 2  (1, 1, 2)  
 1 + 2 = 3  (1, 1, 2, 3)  
 2 + 3 = 5  (1, 1, 2, 3, 5)  
 3 + 5 = 8  (1, 1, 2, 3, 5, 8)  
 and so on. Theres lots of stuff in nature that follow this number sequence, and has lots of cool stuff if you want to look it up!  
- 
-   
-     
 
-Let's start with the base numbers: Heres a list with just 1, 1 in it. feel free to run it and see
+> Let's start with the base numbers: Heres a list with just 1, 1 in it. Run it and see what happens.
 
 #!csharp
 
@@ -48,12 +45,15 @@ foreach (var item in fibonacciNumbers) // print out the list
 #!markdown
 
 ## Count -1
-hy do we need to do `fibonacciNumbers.Count -1` to get the last number of the list? Well, count tells you how many items are in a list. However, the index of an item start at zero. So, if you only had one item in your list, the count would be one, but the index if the item would be 0. The index and count of the last item is always one off. 
+
+Why do we need to do `fibonacciNumbers.Count -1` to get the last number of the list? Well, count tells you how many items are in a list. However, the index of an item start at zero. So, if you only had one item in your list, the count would be one, but the index if the item would be 0. The index and count of the last item is always one off.
 
 #!markdown
 
 # Challenge: Fibinaci to 20th number
+
 We've given you a base of code that deals with fibinacci. Can you make a list that has the first 20 fibonacci numbers?
+
 >Make and print a list that has the first 20 fibonacci numbers
 
 #!csharp
@@ -62,30 +62,39 @@ Console.WriteLine("Challenge");
 
 #!markdown
 
-## Hints and tricks
+## Hints and Tricks
+
 - The final number should be 6765
 - Could you make a forloop? A foreach loop? A while loop? Which kind of loop do you prefer, and which would be more useful?
 - Are you getting close, but are one number off? Thats a really common issue! remember that `>` and `>=` are similar, but end up being one off from the other. Try playing around with that?
 - Remember that you're starting with two items in the list already.
--Stuck? Watch the [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module. Try out pausing once you get an idea and trying it out first before watching the rest. 
+-Stuck? Watch the [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module. Try out pausing once you get an idea and trying it out first before watching the rest.
 
 #!markdown
 
 # Continue Learning
+
 There are plenty more resources out there to learn!
-> Learn the next module: [Objects and Classes](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16)
-> 
-> Review the previous module: [Lists of Other Types](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14)
+> Learn the next module: [Objects and Classes](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/13-Objects%20and%20Classes.dib)
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Review the previous module: [Search, Sort, and Index Lists](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/11-%20Search%2C%20Sort%2C%20and%20Index%20Lists.dib)
 >
-> Read the [documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
+> Start at the begining: [What is C#?](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/01-Hello%20World.dib)
+>
+> Read the [documentation](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
 >
 
+#!markdown
+
 # Other Resources
+
 Here's some more places to explore:
-> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl) (<- How do e get rid of Jayme's id? Do we want to?)
 >
-> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >
-> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+>
+> [Download Visual Studio]() (<-  I've lost a link to that)
+>
+> Any other links?

@@ -1,13 +1,12 @@
 #!markdown
 
 # Challenge: Combining Branches and Loops
+
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=qK7tUpaOXi8&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=11) for this module.
 
-#!markdown
-
 Heres a challenge:
-> 
->  see if you can write C# code to find the sum of all integers 1 through 20 that are divisible by 3.  
+>
+> See if you can write C# code to find the sum of all integers 1 through 20 that are divisible by 3.  
 >
 First, try on your own, in this notebook below, or in Visual Studio, or in Visual Studio Code.
 
@@ -18,25 +17,30 @@ Console.WriteLine("Challenge");
 #!markdown
 
 ## Hints and Tricks:
+
 - The % operator gives you the remainder of a division operation.
 - The if statement gives you the condition to see if a number should be part of the sum.
 - The for loop can help you repeat a series of steps for all the numbers 1 through 20.
 - Getting a weird answer? try making some print statements of your variables, to see it they're changing unexpectedly.
 
 ## Check your Answer
+
 Your final answer should be 63
 
 ## Get help
-Feeling stuck? 
+
+Feeling stuck?
+
 - Watch along on the [video](https://www.youtube.com/watch?v=qK7tUpaOXi8&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=11) to see someone work through the problem. Once you get a feel for it, try pausing and finishing the code yourself!
 - Check your [answer](https://github.com/dotnet/samples/blob/main/csharp/branches-quickstart/Program.cs#L87-L95)
 
 #!markdown
 
 # Continue Learning
+
 There are plenty more resources out there to learn!
 > Learn the next module: [Arrays, Lists, an Collections](https://www.youtube.com/watch?v=qLeF_wpnVto&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=12)
-> 
+>
 > Review the previous module: [What are Loops?](https://www.youtube.com/watch?v=z31m5Up_gSQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=10)
 >
 > Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
@@ -44,7 +48,10 @@ There are plenty more resources out there to learn!
 > Read the [documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops-local?WT.mc_id=Educationalcsharp-c9-scottha)
 >
 
+#!markdown
+
 # Other Resources
+
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >
