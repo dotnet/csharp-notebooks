@@ -16,7 +16,7 @@ The `Contains` method returns a *boolean*. That's a type represented by the keyw
 >
 > Does case matter?
 >  
-> Can you make the result of a `Contain` a variable of it's own? **does this line make sense?**
+> Can you store the return value of the `Contains` method> Remember the type of the result is a `bool`.
 
 #!csharp
 
