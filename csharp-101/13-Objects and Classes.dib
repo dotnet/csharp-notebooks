@@ -13,7 +13,7 @@ Objects are a way to mimic the real world in coding. If you take the concept of 
 
 ## Making a Bank
 
-Over the next few modules, we'll be making a bank account object. Over the next few modules, we'll make a bank account object with these attirbutes:  
+Over the next few modules, we'll be making a bank account object. Over the next few modules, we'll make a bank account object with these attributes:  
 
 > It has a 10-digit number that uniquely identifies the bank account.
 >
@@ -33,8 +33,8 @@ Over the next few modules, we'll be making a bank account object. Over the next 
 We can categorize these goals:
 
 - **properties**: details about the object (how much money it has, the name of the account)
-- **Actions**: things the object can do (accept deposits and withdrawels)
-- **Rules**: guidlines for the object so that it doesn't try to do impossible things (make sure that the account can never go negative)
+- **Actions**: things the object can do (accept deposits and withdrawals)
+- **Rules**: guidelines for the object so that it doesn't try to do impossible things (make sure that the account can never go negative)
 
 #!markdown
 
@@ -74,13 +74,13 @@ public class BankAccount
 
 ## #2: Constructor
 
-This method is what creates a specific instance of an object. Making a `BankAccount` cclass, like we're doing now, is like making a template for all bank accounts. it's not a singular indiviual account. The constructor is what will make a singular account, with all the persons acual details. We give the constructor all the details we want for a secific account, and it assigns the details to the new object's properties.  
+This method is what creates a specific instance of an object. Making a `BankAccount` class, like we're doing now, is like making a template for all bank accounts. it's not a singular individual account. The constructor is what will make a singular account, with all the persons actual details. We give the constructor all the details we want for a specific account, and it assigns the details to the new object's properties.  
   
 `this` is a styling choice. it makes explicit that the variable "Owner" is the variable of that specific instance. In future, we'll have two instances of an object interact, and `this` will become a bit more explicitly helpful. you can also write `Owner` instead of `this.Owner` if you want!
   
 You're taking the variables `name` and `initialBalance`, and creating a bank account that contains these variables
 
-> Copy paste the constructor into the `Bankaccount` below, under `//Constructor`
+> Copy paste the constructor into the `BankAccount` below, under `//Constructor`
 
 ```csharp
 public BankAccount(string name, decimal initialBalance)
@@ -110,7 +110,7 @@ public class BankAccount
 
 Now that you have the code written out, lets see what happens if we make a `BankAccount`!
 
-> Run the two code cells code below to create a specific bankaccount. Does it do what you expected?
+> Run the two code cells code below to create a specific bank account. Does it do what you expected?
 >
 > Change the code to make a bank account for yourself. How much money do you want in it?
 
@@ -242,10 +242,10 @@ There are plenty more resources out there to learn!
 # Resources
 
 Here's some more places to explore:
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >
-> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >
-> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

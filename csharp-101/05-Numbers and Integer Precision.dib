@@ -4,7 +4,7 @@
 
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=31EmPADtv4w&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=6) for this module.
 
-Like we learned in the last module, when doing math with integers, we only get integers as a result, no decimals or fractions. The numbers are `truncated`, which just means that the remaineder is cut off. We can find the remainder with `%`, the remainder operator. The remainder is the left over amount from a division problem.
+Like we learned in the last module, when doing math with integers, we only get integers as a result, no decimals or fractions. The numbers are `truncated`, which just means that the remainder is cut off. We can find the remainder with `%`, the remainder operator. The remainder is the left over amount from a division problem.
 > Lets try it out!  
 
 #!csharp
@@ -73,7 +73,7 @@ Console.WriteLine(d);
 
 #!markdown
 
-> Let's fimd out the range of doubles
+> Let's find out the range of doubles
 
 #!csharp
 

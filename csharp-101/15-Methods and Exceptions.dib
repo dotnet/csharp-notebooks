@@ -4,7 +4,7 @@
 
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) for this module.
 
-Below is the code we've made so far. Balance is gotten by summing up the lists of transactions, but we havent written a way to add a transaction. This happens pleny of times in coding, where to make something more robust, you have to take a step back before going forward.
+Below is the code we've made so far. Balance is gotten by summing up the lists of transactions, but we haven't written a way to add a transaction. This happens plenty of times in coding, where to make something more robust, you have to take a step back before going forward.
 
 > Run the code cells below.
 
@@ -213,7 +213,7 @@ public class BankAccount
 
 #!markdown
 
-## #3: Ading Withdrawal
+## #3: Adding Withdrawal
 
 Now we need to do the same thing for the withdrawal!
 
@@ -472,7 +472,7 @@ Console.WriteLine(account.Balance);
 
 # Review
 
-We did it! You've now sucessfully made a bank account class that has the following attributes:
+We did it! You've now successfully made a bank account class that has the following attributes:
 
 > It has a 10-digit number that uniquely identifies the bank account.
 >
@@ -503,7 +503,7 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [Methods and Members]()
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
 > Read the [documentation]()
 >
@@ -515,6 +515,6 @@ There are plenty more resources out there to learn!
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >
-> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >
-> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

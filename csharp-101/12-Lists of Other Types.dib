@@ -4,7 +4,7 @@
 
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module.
 
-We've been practicing lits of strings, but you can make a list of anything! Lets go through a number example. 
+We've been practicing lists of strings, but you can make a list of anything! Lets go through a number example. 
 
 ## Fibonacci
 
@@ -13,9 +13,9 @@ Fibonacci is a cool number sequence. It adds up the last two numbers up to make 
 1 + 2 = 3  (1, 1, 2, 3)  
 2 + 3 = 5  (1, 1, 2, 3, 5)  
 3 + 5 = 8  (1, 1, 2, 3, 5, 8)  
-and so on. Theres lots of stuff in nature that follow this number sequence, and has lots of cool stuff if you want to look it up!  
+and so on. There's lots of stuff in nature that follow this number sequence, and has lots of cool stuff if you want to look it up!  
 
-> Let's start with the base numbers: Heres a list with just 1, 1 in it. Run it and see what happens.
+> Let's start with the base numbers: Here's a list with just 1, 1 in it. Run it and see what happens.
 
 #!csharp
 
@@ -37,7 +37,7 @@ var fibonacciNumbers = new List<int> {1, 1}; // Starting the list off with the b
 var previous = fibonacciNumbers[fibonacciNumbers.Count - 1]; // take the last number in the list
 var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2]; // take the second to last number in the list
 
-fibonacciNumbers.Add(previous + previous2); // add the previou numbers together, and attach the sum to the end of the list
+fibonacciNumbers.Add(previous + previous2); // add the previous numbers together, and attach the sum to the end of the list
 
 foreach (var item in fibonacciNumbers) // print out the list
     Console.WriteLine(item);
@@ -50,9 +50,9 @@ Why do we need to do `fibonacciNumbers.Count -1` to get the last number of the l
 
 #!markdown
 
-# Challenge: Fibinaci to 20th number
+# Challenge: Fibonacci to 20th number
 
-We've given you a base of code that deals with fibinacci. Can you make a list that has the first 20 fibonacci numbers?
+We've given you a base of code that deals with Fibonacci. Can you make a list that has the first 20 fibonacci numbers?
 
 >Make and print a list that has the first 20 fibonacci numbers
 
@@ -66,7 +66,7 @@ Console.WriteLine("Challenge");
 
 - The final number should be 6765
 - Could you make a forloop? A foreach loop? A while loop? Which kind of loop do you prefer, and which would be more useful?
-- Are you getting close, but are one number off? Thats a really common issue! remember that `>` and `>=` are similar, but end up being one off from the other. Try playing around with that?
+- Are you getting close, but are one number off? That's a really common issue! remember that `>` and `>=` are similar, but end up being one off from the other. Try playing around with that?
 - Remember that you're starting with two items in the list already.
 -Stuck? Watch the [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module. Try out pausing once you get an idea and trying it out first before watching the rest.
 
@@ -79,7 +79,7 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [Search, Sort, and Index Lists](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/11-%20Search%2C%20Sort%2C%20and%20Index%20Lists.dib)
 >
-> Start at the begining: [What is C#?](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/01-Hello%20World.dib)
+> Start at the beginning: [What is C#?](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/01-Hello%20World.dib)
 >
 > Read the [documentation](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
 >

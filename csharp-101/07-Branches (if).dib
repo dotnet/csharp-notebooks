@@ -23,14 +23,14 @@ if (a + b > 10)
 
 #!markdown
 
-In words, this if statement is saying "if a plus b is greater than 10, write the line 'The anwer is greater than 10'". 
+In words, this if statement is saying "if a plus b is greater than 10, write the line 'The answer is greater than 10'". 
 > What would happen if a + b is less than 10? Try editing the above code to see.
 
 Did nothing happen? That's great! Since the the `conditions` (a + b is greater than 10) of the if statement weren't met, the code didn't go into the if statement, and therefore had nothing to print.
 
 #!markdown
 
-## Whats a Condition?
+## What's a Condition?
 
 The `condition` is the statement in parentheses after the `if`. A `condition` is a `boolean`, which means it has to return a true or false. that means using symbols such as `>`, `<`, `<=`, `>=` or `==`.
 > Practice boolean statements. Try out some different symbols and numbers to see the answer
@@ -59,7 +59,7 @@ else
 
 #!markdown
 
-## Multiline If statements
+## Multi-line If statements
 
 What if you want more complex code in your if statements? That's great, just add curly braces around what you want done.
 
@@ -109,7 +109,7 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [Numbers and Decimals](https://www.youtube.com/watch?v=kdKcpF9roeU&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=7)
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
 > Read the documentation: **Get the documentation link**
 >

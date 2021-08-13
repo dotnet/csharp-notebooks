@@ -50,7 +50,7 @@ if(index == -1){
 
 ## Sort
 
-Until now, we've just been putting in names in random order. But sometimes it's nice to have a list be sorted. `Sort()` takes a list and organizes it. It looks at the variable types and organizes in the most resonable way it can see - if it's stings, it sorts alphabetically, if it's numbers it organizes from smallest to largest.  
+Until now, we've just been putting in names in random order. But sometimes it's nice to have a list be sorted. `Sort()` takes a list and organizes it. It looks at the variable types and organizes in the most reasonable way it can see - if it's stings, it sorts alphabetically, if it's numbers it organizes from smallest to largest.  
   
 Note that you done need to write`sortedList = names.Sort()`, you just have to write `names.Sort()`. `Sort()` changes the list itself, and you don't have to save the action to a new object.
 
@@ -82,7 +82,7 @@ foreach(var name in names )
 
 Play around with what you've learned! Here's some starting ideas:  
 
-> Make a list of groeries, then sort them! what is the index that 'Carrots' ius at?
+> Make a list of groceries, then sort them! what is the index that 'Carrots' is at?
 >
 > Try making a list of numbers! Do they sort in the way you expect?
 >
@@ -101,7 +101,7 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [Lists of Other Types](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14)
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
 > Read the [documentation](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTN3dUZpMmZyWmdvemRuN3JYWkJSMzNna1JjUXxBQ3Jtc0tsY3RxR2VXbjdGXzFKMUZtbXVwV29zdDdRYkt3TlNnV3BIZzVQVVBfT3gxaW50QVQ4eHY4OU44dFBnSTRnUDNUOTVmN1AwcldDTVZUMGktQ3ZYT2cycHJLZ2RzSXZqUnpNOVh4OGd3UUVXNi1xeDRORQ&q=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fcsharp%2Ftutorials%2Fintro-to-csharp%2Farrays-and-collections%3F%26WT.mc_id%3DEducationalcsharp-c9-scottha)
 >
@@ -113,6 +113,6 @@ There are plenty more resources out there to learn!
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >
-> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >
-> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

@@ -28,14 +28,14 @@ foreach (var name in names)
 - **var**: Is what you put when you have a variable, but don't know/care what the variable type is.
 - **List\<string\>**: this means that you're making a list of strings. in place of `string` you can put in `int`, `double`, or any other variable.
 - **foreach**: This is another for loop! it goes through every item in a list.
-- **name in names**: This is a style that a lot of people prefer. `names` is the whole list that contains plural names. `name` is an indiviual item in `names`.
+- **name in names**: This is a style that a lot of people prefer. `names` is the whole list that contains plural names. `name` is an individual item in `names`.
 
 #!markdown
 
 ## Alternative method:
 
-The code above is a bit more clear to read for human than the code below, but the code below has some more reconizable code, based off of what we've learned.  
-These are ereally just two different styles of writing the same code. Feel free to use whatever makes the most sense to you!
+The code above is a bit more clear to read for human than the code below, but the code below has some more recognizable code, based off of what we've learned.  
+These are really just two different styles of writing the same code. Feel free to use whatever makes the most sense to you!
 > Run the code below.
 >
 > Can you identify similar parts of code between the two different methods?
@@ -100,7 +100,7 @@ for (int i = 0;i < names.Count; i++)
 
 ## Printing a Specific Item
 
-What if you don't want to print out all of your friends? What if you just want to print out one friend? Thats where brackets come in.
+What if you don't want to print out all of your friends? What if you just want to print out one friend? That's where brackets come in.
 > Run the code
 >
 > try printing a different spot in the list
@@ -146,18 +146,18 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [Combining Branches and Loops](https://www.youtube.com/watch?v=qK7tUpaOXi8&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=11)
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
-> Read the [documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
+> Read the [documentation](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
 >
 
 #!markdown
 
-# Other Resourses
+# Other Resources
 
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >
-> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >
-> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

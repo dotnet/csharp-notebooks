@@ -1,6 +1,6 @@
 #!markdown
 
-# Numbers and Ineger Math
+# Numbers and Integer Math
 
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=jEE0pWTq54U&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=5) for this module.
 
@@ -68,7 +68,7 @@ Console.WriteLine(d);
 
 ## Using Parenthesis
 
-You can also force different orders by putting prentheses around whatever you want done first
+You can also force different orders by putting parentheses around whatever you want done first
 > Try it out
 
 #!csharp
@@ -125,7 +125,7 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [Searching Strings](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=4)
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
 > Read the documentation: **Get the documentation link**
 

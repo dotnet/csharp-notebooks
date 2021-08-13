@@ -6,13 +6,13 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=P
 
 Here's our Bank account so far! It doesn't do much right now, only prints out the owner and balance. It doesn't even have an account number yet. We'll work on a transaction class, which has been added as an empty class for you.
 
-> Run each code chunk below and see what get's printed. This is what we ended up with last time.
+> Run each code chunk below and see what gets printed. This is what we ended up with last time.
 
 #!csharp
 
 public class BankAccount
 {
-    // Prperties
+    // Properties
     public string Number { get; }
     public string Owner { get; set; }
     public decimal Balance { get; }
@@ -45,7 +45,7 @@ Console.WriteLine($"Account{account.Number} was created for {account.Owner} with
 
 We need a starting number, that we can base the new account numbers off of, to insure that all the accounts are unique. Below is the code for this number "seed". What does it mean?
 
-- **Private**: This means that no client can see this number. It's internal, part of the interal workings of the code.
+- **Private**: This means that no client can see this number. It's internal, part of the internal workings of the code.
 - **Static**: This mean the number is universal amongst all individual accounts. If one account changes it, then that number is updated for all the other accounts. This is how we can make it a great way to make sure the account numbers are all unique! Once an bank account uses it for it's bank number, it can add one to the account seed, and the next new bank account has a new number
 
 > Copy the code below and paste it in the `// Properties` section of the `BankAccount` class
@@ -67,7 +67,7 @@ accountNumberSeed++;
 
 public class BankAccount
 {
-    // Prperties
+    // Properties
     public string Number { get; }
     public string Owner { get; set; }
     public decimal Balance { get; }
@@ -102,7 +102,7 @@ Console.WriteLine($"Account {account.Number} was created for {account.Owner} wit
 
 ## #2: Transaction Properties
 
-The next part we need is a balance! One way we could do this is just keep a running tab. However, another way to do it is to create a history of transactions. To do that, we're going to make a little transaction class, that records one tranaction.
+The next part we need is a balance! One way we could do this is just keep a running tab. However, another way to do it is to create a history of transactions. To do that, we're going to make a little transaction class, that records one transaction.
 
 > paste the properties below into the class `Transaction`
 
@@ -201,7 +201,7 @@ public class BankAccount
 
 Now that we have a list of transactions that we can use, we need to attach `Balance` to that. what we want to do is, whenever someone wants to get balance, the code checks the list of transactions and tallies it all up, before returning the answer.  we can do this by attaching some instructions to the `get` in Balance!  
   
-> In `BankAccount`, replace `public decimal Balancce { get;}` with the folowing code
+> In `BankAccount`, replace `public decimal Balance { get;}` with the following code
 
 ```csharp
 public decimal Balance
@@ -254,7 +254,7 @@ public class BankAccount
 
 ## #6: Fixing Errors
 
-You may have noticed a red quiggly line under `this.Balance`. There's a new error we created! Because whenever we're getting Balance, it goes through a process of summing up the list of transactions, we can't just say that `Balance` is initial balance. We won't fix this entirely in this module, but let's make the code usable for now.
+You may have noticed a red squiggly line under `this.Balance`. There's a new error we created! Because whenever we're getting Balance, it goes through a process of summing up the list of transactions, we can't just say that `Balance` is initial balance. We won't fix this entirely in this module, but let's make the code usable for now.
 
 > remove the line `this.Balance = initialBalance`
 
@@ -305,11 +305,11 @@ public class BankAccount
 
 # Review: Where did initial Balance go?
 
-Here's our final code for this module below. There's a problem though! We no longer have an inital balance, and have 0 money! Since we tied up our balance with transactions, we're gonna need to be able to make deposits and withdrawls to put money in the bank. we'll learn that in the next module!
+Here's our final code for this module below. There's a problem though! We no longer have an initial balance, and have 0 money! Since we tied up our balance with transactions, we're gonna need to be able to make deposits and withdrawals to put money in the bank. we'll learn that in the next module!
 
 > Run the code cells below.
 >
-> Try making your own trnasaction methods before the next module! WHere are you getting stuck? What do you need to learn?
+> Try making your own transaction methods before the next module! WHere are you getting stuck? What do you need to learn?
 
 #!csharp
 
@@ -396,7 +396,7 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [Objects and Classes]()
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
 > Read the [documentation]()
 >
@@ -408,6 +408,6 @@ There are plenty more resources out there to learn!
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
 >
-> [Microsoft Learn](https://docs.microsoft.com/en-us/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >
-> [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)

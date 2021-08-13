@@ -8,7 +8,7 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=P
 
 ## Contains
 
-Does your string contain another string within it? You can use `Constains` to find out!  
+Does your string contain another string within it? You can use `Contains` to find out!  
 What value does `Contains` return? A `boolean`, or true/false value.
 > Run the following code.
 >
@@ -67,7 +67,7 @@ There are plenty more resources out there to learn!
 >
 > Review the previous module: [The Basics of Strings](https://www.youtube.com/watch?v=JSpC7Cz64h0&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=3)
 >
-> Start at the begining: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
 > Read the documentation: **Get the documentation link**
 
