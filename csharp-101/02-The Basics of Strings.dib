@@ -82,7 +82,7 @@ Console.WriteLine(sayHello);
 
 ## Changing Case
 
-Sometimes you need your strings to be all upper case or all lover case. `ToUpper` and `ToLower` do just that.
+Sometimes you need your strings to be all UPPER CASE or all lover case. `ToUpper` and `ToLower` do just that.
 > The example below seems a bit mixed up. Can you fix it so "whisper" is all lower case, and "shout" is all upper case?
 
 #!csharp
