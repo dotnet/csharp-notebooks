@@ -12,7 +12,7 @@ A string is a sequence of characters. A handy metaphor is a friendship bracelet,
 
 ## Strings and String Literals
 
-`firstFriend` and `secondFriend` are variables of strings. The line within `Console.WriteLine` is also a string, it just doesn't have a name like `firstFriend` or `secondFriend`. Because it has no name, it can be called a **string literal**.
+`firstFriend` and `secondFriend` are variables of strings. The line within `Console.WriteLine` is also a string. It's a **string literal**. A string literal is text what represents a constant string.
 
 > Let's try that out with the following code. Press play and see what comes out.
 >
@@ -82,7 +82,7 @@ Console.WriteLine(sayHello);
 
 ## Changing Case
 
-Sometimes you need your strings to be all upper case or all lover case. `ToUpper` and `ToLower` do just that.
+Sometimes you need your strings to be all UPPER CASE or all lover case. `ToUpper` and `ToLower` do just that.
 > The example below seems a bit mixed up. Can you fix it so "whisper" is all lower case, and "shout" is all upper case?
 
 #!csharp

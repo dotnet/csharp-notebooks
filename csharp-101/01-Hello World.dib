@@ -14,7 +14,7 @@ This notebook is intended to help you learn the coding language C#. You can:
 
 ## What is C#?
 
-It's a powerful and widely used programming language that you can use to make websites, games, mobile apps, desktop apps, and more with .NET. Learn C#, get started, and it'll give you the world.
+It's a powerful and widely used programming language that you can use to make websites, games, mobile apps, desktop apps, and more. C# is part of the .NET programming platform, which includes libraries for all those applications. Learn C#, get started, and it'll give you the world.
 
 ## C#: Hello World
 
@@ -31,9 +31,9 @@ Console.WriteLine("Hello World!");
 
 # Declare and use variables
 
-A **variable** is a symbol you can use to run the same code with different values. For example, we can declare a new variable named `aFriend` that we can use with `Console.WriteLine` to output a string. We can declare this variable by using the full type `string` or by using the `var` keyword that will automatically figure out the type for us
+A **variable** is a symbol you can use to run the same code with different values. For example, we can declare a new variable named `aFriend` that we can use with `Console.WriteLine` to output a string. We can declare this variable by using the type `string` or by using the `var` keyword that will automatically figure out the type for us
 
-> Go ahead an run the code below to see the output of **Jayme**.
+> Go ahead and run the code below to see the output of **Jayme**.
 >
 > Next, change the name in the variable and run it again to see something different.
 
@@ -58,7 +58,7 @@ Console.WriteLine("Hello " + aFriend + "!");
 
 # String Interpolation
 
-We just used `+` to build a new string from a **variable** and a **constant**. There is a better way to do this by placing the variable between `{`and `}` to tell C# to replace that text with the value of the variable. This is called string interpolation. We can then add a `$` before the opening quote to enable string interpolation for the string.
+We just used `+` to build a new string from a **variable** and a **constant**. There is a better way to do this by placing the variable between `{`and `}` to tell C# to replace that text with the value of the variable. This is called **string interpolation**. We can then add a `$` before the opening quote to enable string interpolation for the string.
 
 #!csharp
 
