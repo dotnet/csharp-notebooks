@@ -67,7 +67,7 @@ Console.WriteLine($"[{trimmedGreeting}]");
 
 ## Replace
 
-You can also replace substrings with other stuff. For example, in the code below, you can take "Hello World!" and replace "Hello" with "Greetings", to make "Greetings World!"
+You can also replace substrings with other values. For example, in the code below, you can take "Hello World!" and replace "Hello" with "Greetings", to make "Greetings World!"
 
 > Try it out. What else could you replace "Hello" with?
 
