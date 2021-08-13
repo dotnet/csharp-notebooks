@@ -31,7 +31,7 @@ Console.WriteLine("Hello World!");
 
 # Declare and use variables
 
-A **variable** is a symbol you can use to run the same code with different values. For example, we can declare a new variable named `aFriend` that we can use with `Console.WriteLine` to output a string. We can declare this variable by using the full type `string` or by using the `var` keyword that will automatically figure out the type for us
+A **variable** is a symbol you can use to run the same code with different values. For example, we can declare a new variable named `aFriend` that we can use with `Console.WriteLine` to output a string. We can declare this variable by using the type `string` or by using the `var` keyword that will automatically figure out the type for us
 
 > Go ahead an run the code below to see the output of **Jayme**.
 >
