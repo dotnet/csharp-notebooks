@@ -9,14 +9,14 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=P
 ## Contains
 
 Does your string contain another string within it? You can use `Contains` to find out!  
-What value does `Contains` return? A `boolean`, or true/false value.
+The `Contains` method returns a *boolean*. That's a type represented by the keyword `bool` that can hold two values: `true` or `false`. In this case, the method returns `true` when sought string is found, and `false` when it's not found.
 > Run the following code.
 >
 > What else would or wouldn't be contained?
 >
 > Does case matter?
 >  
-> Can you make the result of a `Contain` a variable of it's own? **does this line make sense?**
+> Can you store the return value of the `Contains` method> Remember the type of the result is a `bool`.
 
 #!csharp
 
