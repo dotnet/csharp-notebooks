@@ -88,7 +88,7 @@ Console.WriteLine(d);
 
 #!markdown
 
-## Integers: Whole no matter what
+## Integers: Whole numbers no matter what
 
 Integer math will always produce integers. What that means is that even when math should result in a decimal or fraction, the answer will be rounded to a whole number.
 > Check it out. WHat should the answer truly be?
