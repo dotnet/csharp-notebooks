@@ -28,7 +28,7 @@ Console.WriteLine(songLyrics.Contains("greetings"));
 
 ## StartsWith and EndsWith
 
-`StartsWith` and `EndsWith` are similar methods, but more specific.
+`StartsWith` and `EndsWith` are methods similar to `Contains`, but more specific. They tell you if a string starts with or ends with the string you're checking. It has the same structure as `Contains`, that is: `bigstring.StartsWith(substring)`
 > Now you try!  
 > In the code below, try searching the line to see if it starts with "you" or "I".  
 > Next, see if the code ends with "hello" or "goodbye"
