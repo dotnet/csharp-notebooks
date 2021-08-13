@@ -58,7 +58,7 @@ Console.WriteLine("Hello " + aFriend + "!");
 
 # String Interpolation
 
-We just used `+` to build a new string from a **variable** and a **constant**. There is a better way to do this by placing the variable between `{`and `}` to tell C# to replace that text with the value of the variable. This is called string interpolation. We can then add a `$` before the opening quote to enable string interpolation for the string.
+We just used `+` to build a new string from a **variable** and a **constant**. There is a better way to do this by placing the variable between `{`and `}` to tell C# to replace that text with the value of the variable. This is called **string interpolation**. We can then add a `$` before the opening quote to enable string interpolation for the string.
 
 #!csharp
 
