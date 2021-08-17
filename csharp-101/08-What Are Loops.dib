@@ -5,7 +5,7 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=z31m5Up_gSQ&list=P
 
 #!markdown
 
-Loops are a way to repeat an action multiple times. We use `while` to do that. 
+Loops are a way to repeat an action multiple times. You use `while` to do that. 
 > Try out this first loop
 
 #!csharp
@@ -23,9 +23,9 @@ So what happened here? `While` checks if the condition ('counter < 10') is true.
 When figuring out branches and loops, it can be helpful to put code into human language. This code is saying: "Set up counter to equal 0. While the counter is less than 10, print 'Hello World! the counter is {counter}' and then increase the counter by 1". 
 
 ## Infinite loops
-It's easy to accidentally make an infinite loop. **Editors note: We can't tell them to create an infinite loop, because the notebook doesn't ever stop itself** TIf you hit an infinite loop, you have two options: you can always exit out of your program, or you can hit ctrl+c.
+It's easy to accidentally make an infinite loop. **Editors note: You can't tell them to create an infinite loop, because the notebook doesn't ever stop itself** TIf you hit an infinite loop, you have two options: you can always exit out of your program, or you can hit ctrl+c.
 
-> Challenge: We can't show one on this notebook, because the code doesn't catch itself, but as a challenge, try making an infinite loop in VS Studio! What are different ways you might accidentally make it infinite? It can be scary to make a mistake, but always know you can ctrl+c or exit the program. 
+> Challenge: You can't show one on this notebook, because the code doesn't catch itself, but as a challenge, try making an infinite loop in VS Studio! What are different ways you might accidentally make it infinite? It can be scary to make a mistake, but always know you can ctrl+c or exit the program. 
 
 #!markdown
 
@@ -49,13 +49,13 @@ Hmm, nothing much seems to different, right?
 
 > Try changing the conditional to `(counter < 0)` on both codes. What happens?
 
-In the `while` loop, nothing is printed out, but in the `do` loop, we get one print out. The `do` loop does the action first, then checks the conditional. In contrast, the `while` loop checks the conditional first, then does an action. 
+In the `while` loop, nothing is printed out, but in the `do` loop, you get one print out. The `do` loop does the action first, then checks the conditional. In contrast, the `while` loop checks the conditional first, then does an action. 
 
 #!markdown
 
 ## For Loop
 `For` is one the most common loop. It will repeat an action for a specific amount of turns. It can look a little intimidating 
-> Before we direct the code, let's run the following for loop just to see it working
+> Before you direct the code, run the following for loop just to see it working
 
 #!csharp
 
@@ -69,7 +69,7 @@ for(int counter = 0; counter < 10; counter++)
 ### What's in the parentheses?
 There's three parts in the for loop parentheses: `int counter = 0`, `counter < 10`, and `counter++`  
 You can think of them as the start point, the end point, and the step size.   
-`int counter = 0` is just setting up counter. We're starting at 0.  
+`int counter = 0` is just setting up counter. You're starting at 0.  
 `counter < 10` is the conditional that gets checked at the start of every loop. once the conditional is false (in this case, once counter is not less than 10), the loop is done and the code moves on.  
 `counter++` is increasing counter by one, taking one step closer to the end. the step is taken at the end of each loop.
 > Try messing with the `for` loop set up. How does it change? 

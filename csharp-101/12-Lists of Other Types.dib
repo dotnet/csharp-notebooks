@@ -4,7 +4,7 @@
 
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module.
 
-We've been practicing lists of strings, but you can make a list of anything! Lets go through a number example. 
+You've been practicing lists of strings, but you can make a list of anything! Here's a number example. 
 
 ## Fibonacci
 
@@ -15,7 +15,7 @@ Fibonacci is a cool number sequence. It adds up the last two numbers up to make 
 3 + 5 = 8  (1, 1, 2, 3, 5, 8)  
 and so on. There's lots of stuff in nature that follow this number sequence, and has lots of cool stuff if you want to look it up!  
 
-> Let's start with the base numbers: Here's a list with just 1, 1 in it. Run it and see what happens.
+> Start with the base numbers: Here's a list with just 1, 1 in it. Run it and see what happens.
 
 #!csharp
 
@@ -26,7 +26,7 @@ foreach (var item in fibonacciNumbers)
 
 #!markdown
 
-Now, we don't want just 1,1 in it! We want more of the sequence. In this code, we're using the last two numbers of the list, added them together to make the next number, then added it to the list! 
+Now, you don't want just 1,1 in it! You want more of the sequence. In this code, you're using the last two numbers of the list, adding them together to make the next number, then adding it to the list. 
 
 > Run the code to try it out
 
@@ -46,13 +46,13 @@ foreach (var item in fibonacciNumbers) // print out the list
 
 ## Count -1
 
-Why do we need to do `fibonacciNumbers.Count -1` to get the last number of the list? Well, count tells you how many items are in a list. However, the index of an item start at zero. So, if you only had one item in your list, the count would be one, but the index if the item would be 0. The index and count of the last item is always one off.
+Why do you need to do `fibonacciNumbers.Count -1` to get the last number of the list? Well, count tells you how many items are in a list. However, the index of an item start at zero. So, if you only had one item in your list, the count would be one, but the index if the item would be 0. The index and count of the last item is always one off.
 
 #!markdown
 
 # Challenge: Fibonacci to 20th number
 
-We've given you a base of code that deals with Fibonacci. Can you make a list that has the first 20 fibonacci numbers?
+You've given you a base of code that deals with Fibonacci. Can you make a list that has the first 20 fibonacci numbers?
 
 >Make and print a list that has the first 20 fibonacci numbers
 
@@ -68,7 +68,7 @@ Console.WriteLine("Challenge");
 - Could you make a forloop? A foreach loop? A while loop? Which kind of loop do you prefer, and which would be more useful?
 - Are you getting close, but are one number off? That's a really common issue! remember that `>` and `>=` are similar, but end up being one off from the other. Try playing around with that?
 - Remember that you're starting with two items in the list already.
--Stuck? Watch the [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module. Try out pausing once you get an idea and trying it out first before watching the rest.
+- Stuck? Watch the [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module. Try out pausing once you get an idea and trying it out first before watching the rest.
 
 #!markdown
 
@@ -89,7 +89,7 @@ There are plenty more resources out there to learn!
 # Other Resources
 
 Here's some more places to explore:
-> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl) (<- How do e get rid of Jayme's id? Do we want to?)
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl) (<- How do e get rid of Jayme's id? Do you want to?)
 >
 > [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >

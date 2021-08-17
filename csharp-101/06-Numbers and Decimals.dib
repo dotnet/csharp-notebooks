@@ -6,7 +6,7 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=kdKcpF9roeU&list=P
 
 #!markdown
 
-## Working With Fixed Point types (Editor Note: Video talks about fixed point types, website talks about decimal types? Is there a preference in which is taught?)
+## Working With Fixed Point types 
 
 the `Decimal` type is similar to `double`s. They don't have as big a range, but they do have much higher precision.
 

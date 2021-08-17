@@ -12,7 +12,7 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=y4OTe8LSokg&list=P
 
 If statements makes decisions.
 
-> Let's try out our first if statement:
+> try out our first if statement:
 
 #!csharp
 
@@ -63,7 +63,7 @@ else
 
 What if you want more complex code in your if statements? That's great, just add curly braces around what you want done.
 
-> try it out!
+> Try it out! Run the following code.
 
 #!csharp
 

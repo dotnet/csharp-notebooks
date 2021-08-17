@@ -8,7 +8,7 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=NJ5ghiutzfY&list=P
 
 ## Search 
 
-In the last notebook, we learned how to find what item was stored at a specific index. Now, given an item, let's find out it's index.
+In the last notebook, you learned how to find what item was stored at a specific index. Now, given an item, find out it's index.
 
 > Run the code
 >
@@ -29,7 +29,7 @@ Console.WriteLine($"Found {name} at {index}");
 
 ## What does -1 mean?
 
-If `IndexOf()` returns -1, then that means it couldn't find the item in the list. In fact, we can make a little if statement that works in not finding the item:
+If `IndexOf()` returns -1, then that means it couldn't find the item in the list. In fact, you can make a little if statement that works in not finding the item:
 
 > Run the code
 >
@@ -50,9 +50,9 @@ if(index == -1){
 
 ## Sort
 
-Until now, we've just been putting in names in random order. But sometimes it's nice to have a list be sorted. `Sort()` takes a list and organizes it. It looks at the variable types and organizes in the most reasonable way it can see - if it's stings, it sorts alphabetically, if it's numbers it organizes from smallest to largest.  
+Until now, you've just been putting in names in random order. But sometimes it's nice to have a list be sorted. `Sort()` takes a list and organizes it. It looks at the variable types and organizes in the most reasonable way it can see - if it's stings, it sorts alphabetically, if it's numbers it organizes from smallest to largest.  
   
-Note that you done need to write`sortedList = names.Sort()`, you just have to write `names.Sort()`. `Sort()` changes the list itself, and you don't have to save the action to a new object.
+Note that you done need to write `sortedList = names.Sort()`, you just have to write `names.Sort()`. `Sort()` changes the list itself, and you don't have to save the action to a new object.
 
 > Run the code!
 >

@@ -7,13 +7,13 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=P
 #!markdown
 
 ## Object Oriented Programming
-Objects are a way to mimic the real world in coding. If you take the concept of a person, they can have a name, address, height, all of these properties that change from person to person. Object oriented coding packages that type of information, so that you can easily make a person with all those details.There's lots of stuff you can do with objects, but let's just start with the basics.
+Objects are a way to mimic the real world in coding. If you take the concept of a person, they can have a name, address, height, all of these properties that change from person to person. Object oriented coding packages that type of information, so that you can easily make a person with all those details. There's lots of stuff you can do with objects, but for now you can start with the basics.
 
 #!markdown
 
 ## Making a Bank
 
-Over the next few modules, we'll be making a bank account object. Over the next few modules, we'll make a bank account object with these attributes:  
+Over the next few modules, you'll make a bank account object with these attributes:  
 
 > It has a 10-digit number that uniquely identifies the bank account.
 >
@@ -30,7 +30,7 @@ Over the next few modules, we'll be making a bank account object. Over the next 
 > Withdrawals cannot result in a negative balance.
 >
 
-We can categorize these goals:
+You can categorize these goals:
 
 - **properties**: details about the object (how much money it has, the name of the account)
 - **Actions**: things the object can do (accept deposits and withdrawals)
@@ -40,14 +40,14 @@ We can categorize these goals:
 
 ## Make it Yourself
 
-Below is a blank `BankAccount` object, that we're going to create. We're going to add in code step by step.
+Below is a blank `BankAccount` object, that you're going to create. You'll add in code step by step.
 
 #!markdown
 
 ## #1: Properties
 
 Properties are a nice little list of values each object holds.  
-`get` and `set`: sometimes you want to only want a user to see a variable but not change it. other times you want the user to be able to change a variable. `get` lets you see the variable, `set` lets you change it. (right?)  
+`get` and `set`: sometimes you want to only want a user to see a variable but not change it. Other times you want the user to be able to change a variable. `get` lets you see the variable, `set` lets you change it. (right?)  
 
 > Copy the code below and paste it into the `BankAccount` object under `//Properties`
 
@@ -74,9 +74,9 @@ public class BankAccount
 
 ## #2: Constructor
 
-This method is what creates a specific instance of an object. Making a `BankAccount` class, like we're doing now, is like making a template for all bank accounts. it's not a singular individual account. The constructor is what will make a singular account, with all the persons actual details. We give the constructor all the details we want for a specific account, and it assigns the details to the new object's properties.  
+This method is what creates a specific instance of an object. Making a `BankAccount` class, like you're doing now, is like making a template for all bank accounts. It's not a singular individual account. The constructor is what will make a singular account, with all the persons actual details. You give the constructor all the details you want for a specific account, and it assigns the details to the new object's properties.  
   
-`this` is a styling choice. it makes explicit that the variable "Owner" is the variable of that specific instance. In future, we'll have two instances of an object interact, and `this` will become a bit more explicitly helpful. you can also write `Owner` instead of `this.Owner` if you want!
+`this` is a styling choice. It makes explicit that the variable "Owner" is the variable of that specific instance. In future, you'll have two instances of an object interact, and `this` will become a bit more explicitly helpful. You can also write `Owner` instead of `this.Owner` if you want!
   
 You're taking the variables `name` and `initialBalance`, and creating a bank account that contains these variables
 
@@ -108,11 +108,11 @@ public class BankAccount
 
 ## #3: Making an Instance
 
-Now that you have the code written out, lets see what happens if we make a `BankAccount`!
+Now that you have the code written out, see what happens if you make a `BankAccount`!
 
 > Run the two code cells code below to create a specific bank account. Does it do what you expected?
 >
-> Change the code to make a bank account for yourself. How much money do you want in it?
+> Change the code to make a bank account for yourself. How much money do you want in your bank account?
 
 #!csharp
 
@@ -141,13 +141,13 @@ Console.WriteLine($"Account{account.Number} was created for {account.Owner} with
 
 ## What about the `account.Owner`?
 
-You may have noticed that the code didn't print out anything for `account.Owner`. That's okay! We haven't put anything in yet. We'll be talking about it in the next module.
+You may have noticed that the code didn't print out anything for `account.Owner`. That's okay! You haven't put anything in it yet. You'll learn about it in the next module.
 
 #!markdown
 
 ## #4: Functions
 
-Functions exist to do actions with an object or change the object variables. These two functions will make a deposit (add money) and make a withdrawal (take out money). We'll be adding stuff in the methods later, but for now we just want to add the empty versions
+Functions exist to do actions with an object or change the object variables. These two functions will make a deposit (add money) and make a withdrawal (take out money). You'll be adding stuff in the methods later, but for now you just want to add the empty versions
 
 > copy the functions below and add them to `BankAccount` under `//Functions`
 
@@ -183,7 +183,7 @@ public class BankAccount
 
 # Review
 
-Here's the version of `BankAccount` we end up with in this module. We'll be adding more to it in the next module, but why don't you try out stuff, just to see what you need to learn?  
+Here's the version of `BankAccount` you end up with in this module. You'll be adding more to it in the next module, but why don't you try out stuff, just to see what you need to learn?  
   
 > Cn you add a 10-digit code? What would your object need to know to make sure the code was unique?
 >
