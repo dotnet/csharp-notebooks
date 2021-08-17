@@ -75,13 +75,13 @@ Console.WriteLine("Challenge");
 # Continue Learning
 
 There are plenty more resources out there to learn!
-> Learn the next module: [Objects and Classes](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/13-Objects%20and%20Classes.dib)
+> Learn the next module: [Objects and Classes](vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/13-Objects%20and%20Classes.dib)
 >
-> Review the previous module: [Search, Sort, and Index Lists](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/11-%20Search%2C%20Sort%2C%20and%20Index%20Lists.dib)
+> Review the previous module: [Search, Sort, and Index Lists](vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/11-%20Search%2C%20Sort%2C%20and%20Index%20Lists.dib)
 >
-> Start at the beginning: [What is C#?](https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/01-Hello%20World.dib)
+> Start at the beginning: [What is C#?](vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/01-Hello%20World.dib)
 >
-> Read the [documentation](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
+> Read the [documentation](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=csharpnotebook-35129-website)
 >
 
 #!markdown
@@ -89,12 +89,11 @@ There are plenty more resources out there to learn!
 # Other Resources
 
 Here's some more places to explore:
-> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl) (<- How do e get rid of Jayme's id? Do you want to?)
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
 >
 > [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
 >
-> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)
 >
-> [Download Visual Studio]() (<-  I've lost a link to that)
+> [Download Visual Studio](https://visualstudio.microsoft.com/downloads/)
 >
-> Any other links?
