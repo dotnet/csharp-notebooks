@@ -228,9 +228,9 @@ Console.WriteLine($"Account{account.Number} was created for {account.Owner} with
 # Continue Learning
 
 There are plenty more resources out there to learn!
-> Go to the [next Notebook]()
+> [⏩ Next Module - Methods and Members](http://tinyurl.com/csharp-notebook14)
 >
-> Go to the [previous Notebook]()
+> [⏪ Last Module - Lists of Other Types](http://tinyurl.com/csharp-notebook12)  
 >
 > [Watch the video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16)
 >

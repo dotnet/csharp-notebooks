@@ -392,9 +392,9 @@ Console.WriteLine($"Account {account.Number} was created for {account.Owner} wit
 # Continue Learning
 
 There are plenty more resources out there to learn!
-> Learn the next module: [Methods and Exceptions]()
+> [⏩ Next Module - Methods and Exceptions](http://tinyurl.com/csharp-notebook15)
 >
-> Review the previous module: [Objects and Classes]()
+> [⏪ Last Module - Objects and Classes](http://tinyurl.com/csharp-notebook13)  
 >
 > [Watch the video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17)
 >
