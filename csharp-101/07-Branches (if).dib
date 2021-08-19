@@ -4,8 +4,6 @@
 
 Watch the full [C# 101 video](https://www.youtube.com/watch?v=y4OTe8LSokg&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=8) for this module.
 
-**editors note: This video goes through downloading VS and starting up a program. Since this is already a visual studio code, I didn't include it, but I'm not sure if that's wanted.**
-
 #!markdown
 
 ## Basic If 
@@ -26,7 +24,7 @@ if (a + b > 10)
 In words, this if statement is saying "if a plus b is greater than 10, write the line 'The answer is greater than 10'". 
 > What would happen if a + b is less than 10? Try editing the above code to see.
 
-Did nothing happen? That's great! Since the the `conditions` (a + b is greater than 10) of the if statement weren't met, the code didn't go into the if statement, and therefore had nothing to print.
+Did nothing happen? That's great! Since the the **conditions** (a + b is greater than 10) of the if statement weren't met, the code didn't go into the if statement, and therefore had nothing to print.
 
 #!markdown
 

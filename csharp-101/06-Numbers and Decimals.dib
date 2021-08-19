@@ -41,9 +41,12 @@ You can see that a decimals have a higher precision than doubles.
 # Playground
 
 Play around with what you've learned! Here's some starting ideas:  
-> There are other number types in C#, one of which is `short`. Compare the range and precision of `short`s to the other number types
+
+> Can you find the area of a circle with a radius 2.5 inches?
 >
-> Can you find the area of a circle with a radius 2.5 inches? What does the answer look like when you change number types, such as int, short, and decimal. Hint: You can write `Math.PI` as pi, instead of writing the answer out
+> What does the answer look like when you change number types, such as int, short, and decimal. 
+>
+> Hint: You can write `Math.PI` as pi, instead of writing the answer out
 
 #!csharp
 
