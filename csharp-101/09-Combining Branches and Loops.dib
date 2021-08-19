@@ -18,9 +18,9 @@ Console.WriteLine("Challenge");
 
 ## Hints and Tricks:
 
-- The % operator gives you the remainder of a division operation.
-- The if statement gives you the condition to see if a number should be part of the sum.
-- The for loop can help you repeat a series of steps for all the numbers 1 through 20.
+- The `%` operator gives you the remainder of a division operation.
+- The `if` statement gives you the condition to see if a number should be part of the sum.
+- The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 - Getting a weird answer? try making some print statements of your variables, to see it they're changing unexpectedly.
 
 ## Check your Answer
