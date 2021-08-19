@@ -4,7 +4,9 @@ Welcome!
 
 These are the VSCode interactive notebooks teaching C# 101.
 
-##How to Install
+## How to Install
+
+Head over to [Learn to code C#](https://dotnet.microsoft.com/learntocode) and download VS Code and the .NET Interactive Notebooks extension.
 
 ## Contents
 
@@ -25,7 +27,6 @@ These are the VSCode interactive notebooks teaching C# 101.
 13 | Objects and Classes           | [13 Notebook](https://tinyurl.com/csharp101-notebook13)| [13 Video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 14 | Methods and Members           | [14 Notebook](https://tinyurl.com/csharp101-notebook14) | [14 Video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 15 | Methods and Exceptions        | [15 Notebook](https://tinyurl.com/csharp101-notebook15) | [15 Video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
-
 
 
 
