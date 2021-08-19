@@ -54,7 +54,7 @@ In the `while` loop, nothing is printed out, but in the `do` loop, you get one p
 #!markdown
 
 ## For Loop
-`For` is one the most common loop. It will repeat an action for a specific amount of turns. It can look a little intimidating 
+`For` is one the most common loop. It will repeat an action for a specific amount of turns. It can look a little intimidating.
 > Before you direct the code, run the following for loop just to see it working
 
 #!csharp
@@ -84,7 +84,7 @@ Play around with what you've learned! Here's some starting ideas:
 >
 > Make a loop that counts from 7 to 22. 
 > 
-> Bonus: Make the above will all three loop types.
+> Bonus: Make the above with all three loop types.
 
 #!csharp
 

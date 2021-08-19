@@ -48,7 +48,7 @@ That number, which should be really big, is now close to the minimum! This is be
 
 ## Doubles: Precision and Size
 
-Doubles are another form of numbers. They can hold and answer in decimals.
+Doubles are another form of numbers. They can hold and answer in floating point.
 > repeat the same code from the beginning, and see the difference a double makes
 
 #!csharp
