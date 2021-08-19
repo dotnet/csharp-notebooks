@@ -116,20 +116,21 @@ Console.WriteLine("       friendship bracelet     ");
 # Continue Learning
 
 There are plenty more resources out there to learn!
-> Learn the next module: [Searching Strings](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=5)
+> [⏩ Next Module - The Basics of Strings](vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/02-The%Basics%of%Strings.dib)
 >
-> Review the previous module: [Hello World](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2)
+> [⏪ Last Module - Hello World](vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/01-Hello%World.dib)  
 >
-> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+> Start at the beginning: [What is C#?](vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/csharp-notebooks/main/csharp-101/01-Hello%20World.dib)
 >
+> Read the [documentation](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=csharpnotebook-35129-website)
 
 #!markdown
 
 # Other Resources
 
 Here's some more places to explore:
-> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
 >
-> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=friends-0000-jasingl)
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
 >
-> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?&WT.mc_id=Educationalcsharp-c9-jasingl)
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)
