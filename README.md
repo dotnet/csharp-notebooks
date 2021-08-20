@@ -8,8 +8,8 @@ Head over to [Learn to code C#](https://dotnet.microsoft.com/learntocode) and do
 
 ## C# 101
 
-/# | Topic                         | Notebook Link         | Video Link | Documentation
----|-------------------------------|-----------------------|------------|--------------
+| # | Topic                         | Notebook Link         | Video Link | Documentation |
+|---|-------------------------------|-----------------------|------------|---------------|
 1  | Hello World                   | [01 Notebook](https://tinyurl.com/csharp-notebook01) | [01 Video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
 2  | The Basics of Strings         | [02 Notebook](https://tinyurl.com/csharp-notebook02) | [02 Video](https://www.youtube.com/watch?v=JSpC7Cz64h0&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=3) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
 3  | Searching Strings             | [03 Notebook](https://tinyurl.com/csharp-notebook03) | [03 Video](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=4) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
