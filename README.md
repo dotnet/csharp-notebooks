@@ -1,16 +1,14 @@
-# .NET Interactive Notebooks for C# 101
+# .NET Interactive Notebooks for C#
 
-Welcome!
-
-These are the VSCode interactive notebooks teaching C# 101.
+Welcome to the home of .NET interactive notebooks for C#!
 
 ## How to Install
 
-Head over to [Learn to code C#](https://dotnet.microsoft.com/learntocode) and download VS Code and the .NET Interactive Notebooks extension.
+Head over to [Learn to code C#](https://dotnet.microsoft.com/learntocode) and download VS Code and the .NET Interactive Notebooks extension to get started.
 
-## Contents
+## C# 101
 
-/# | Topic                         | Notebook Link         | Video Link | Documentation
+# | Topic                         | Notebook Link         | Video Link | Documentation
 ---|-------------------------------|-----------------------|------------|--------------
 1  | Hello World                   | [01 Notebook](https://tinyurl.com/csharp101-notebook01) | [01 Video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
 2  | The Basics of Strings         | [02 Notebook](https://tinyurl.com/csharp101-notebook02) | [02 Video](https://www.youtube.com/watch?v=JSpC7Cz64h0&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=3) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
