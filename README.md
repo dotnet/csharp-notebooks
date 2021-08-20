@@ -8,6 +8,8 @@ Head over to [Learn to code C#](https://dotnet.microsoft.com/learntocode) and do
 
 ## C# 101
 
+Download or clone this repo and open the `csharp-101` folder in VS Code to get started with the C# 101 notebooks. Or, if you want just tap on one of the Notebook links below and automatically have it open in VS Coded!
+
 | # | Topic                         | Notebook Link         | Video Link | Documentation |
 |---|-------------------------------|-----------------------|------------|---------------|
 1  | Hello World                   | [01 Notebook](https://tinyurl.com/csharp-notebook01) | [01 Video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
