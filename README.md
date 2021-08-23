@@ -4,7 +4,10 @@ Welcome to the home of .NET interactive notebooks for C#!
 
 ## How to Install
 
-Head over to [Learn to code C#](https://dotnet.microsoft.com/learntocode) and download VS Code and the .NET Interactive Notebooks extension to get started.
+1. Download the .NET Coding Pack for VS Code for [Windows](https://aka.ms/dotnet-coding-pack-win) or [macOS](https://aka.ms/dotnet-coding-pack-mac).
+2. Install the [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) extension.
+
+For more information and resources, visit [Learn to code C#](https://dotnet.microsoft.com/learntocode).
 
 ## C# 101
 
@@ -28,8 +31,6 @@ Download or clone this repo and open the `csharp-101` folder in VS Code to get s
 14 | Methods and Members           | [14 Notebook](https://tinyurl.com/csharp-notebook14) | [14 Video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 15 | Methods and Exceptions        | [15 Notebook](https://tinyurl.com/csharp-notebook15) | [15 Video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 
-
-
 ## .NET Foundation
 
 .NET Interative Notebooks for C# is a [.NET Foundation](https://www.dotnetfoundation.org/projects) project.
@@ -40,8 +41,6 @@ There are many .NET related projects on GitHub.
 - [ASP.NET Core home](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.1) - the best place to start learning about ASP.NET Core.
 
 This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/) to clarify expected behavior in our community. For more information, see the [.NET Foundation Code of Conduct](http://www.dotnetfoundation.org/code-of-conduct).
-
-General .NET OSS discussions: [.NET Foundation forums](https://forums.dotnetfoundation.org)
 
 ## License
 
