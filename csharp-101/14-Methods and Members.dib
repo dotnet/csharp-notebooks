@@ -17,7 +17,7 @@ public class BankAccount
     public string Owner { get; set; }
     public decimal Balance { get; }
 
-    // Constructor 
+    // Constructor
     public BankAccount(string name, decimal initialBalance)
     {
         this.Owner = name;
@@ -46,15 +46,15 @@ Console.WriteLine($"Account{account.Number} was created for {account.Owner} with
 You need a starting number, that you can base the new account numbers off of, to insure that all the accounts are unique. Below is the code for this number "seed". What does it mean?
 
 - **Private**: This means that no client can see this number. It's internal, part of the internal workings of the code.
-- **Static**: This mean the number is universal amongst all individual accounts. If one account changes it, then that number is updated for all the other accounts. This is how you can make it a great way to make sure the account numbers are all unique! Once an bank account uses it for it's bank number, it can add one to the account seed, and the next new bank account has a new number
+- **Static**: This mean the number is universal amongst all individual accounts. If one account changes it, then that number is updated for all the other accounts. This is how you can make it a great way to make sure the account numbers are all unique! Once an bank account uses it for it's bank number, it can add one to the account seed, and the next new bank account has a new number.
 
-> Copy the code below and paste it in the `// Properties` section of the `BankAccount` class
+> Copy the code below and paste it in the `// Properties` section of the `BankAccount` class.
 
 ```csharp
 private static int accountNumberSeed = 1234567890;
 ```
 
-> Copy this next bit of code and add it to the `constructor`
+> Copy this next bit of code and add it to the constructor.
 
 ```csharp
 this.Number = accountNumberSeed.ToString();
@@ -73,8 +73,7 @@ public class BankAccount
     public decimal Balance { get; }
     //(Paste first bit here!)
 
-
-    // Constructor 
+    // Constructor
     public BankAccount(string name, decimal initialBalance)
     {
         this.Owner = name;
@@ -125,9 +124,9 @@ public class Transaction
 
 ## #3: Transaction Constructor
 
-Next you need to add the constructor to the class!
+Next, you need to add the constructor to the class!
 
-> Add code below to `Transaction`, under constructor
+> Add the following code to the `Transaction` class, under constructor.
 
 ```csharp
 public Transaction(decimal amount, DateTime date, string note)
@@ -142,7 +141,7 @@ public Transaction(decimal amount, DateTime date, string note)
 
 public class Transaction
 {
-    // Properties 
+    // Properties
     public decimal Amount { get; }
     public DateTime Date { get; }
     public string Notes { get; }
@@ -154,9 +153,9 @@ public class Transaction
 
 ## #4: Update BankAccount to match
 
-Now that you have a transaction class, you can use that in our bank account. First, you need to make a list of transactions
+Now that you have a transaction class, you can use that in our bank account. First, you need to make a list of transactions.
 
-> Copy the code below into the properties section
+> Copy the following code into the Properties section.
 
 ```csharp
 private List<Transaction> allTransactions = new List<Transaction>();
@@ -172,17 +171,17 @@ public class BankAccount
     public string Number { get; }
     public string Owner { get; set; }
     public decimal Balance{ get;}
-    private static int accountNumberSeed = 1234567890; 
+    private static int accountNumberSeed = 1234567890;
     //(Paste here!)
 
     // Constructor
     public BankAccount(string name, decimal initialBalance)
     {
         this.Owner = name;
-        this.Balance = initialBalance;   
-        this.Number = accountNumberSeed.ToString(); 
-        accountNumberSeed++; 
-        
+        this.Balance = initialBalance;
+        this.Number = accountNumberSeed.ToString();
+        accountNumberSeed++;
+
     }
 
     // Functions
@@ -199,9 +198,9 @@ public class BankAccount
 
 ## #5: Updating Balance
 
-Now that you have a list of transactions that you can use, you need to attach `Balance` to that. what you want to do is, whenever someone wants to get balance, the code checks the list of transactions and tallies it all up, before returning the answer.  You can do this by attaching some instructions to the `get` in Balance!  
-  
-> In `BankAccount`, replace `public decimal Balance { get;}` with the following code
+Now that you have a list of transactions that you can use, you need to attach `Balance` to that. What you want to do is, whenever someone wants to get balance, the code checks the list of transactions and tallies it all up, before returning the answer. You can do this by attaching some instructions to the `get` in Balance!
+
+> In `BankAccount`, replace `public decimal Balance { get;}` with the following code:
 
 ```csharp
 public decimal Balance
@@ -229,9 +228,8 @@ public class BankAccount
     public decimal Balance { get; }  // replace this line!
     private static int accountNumberSeed = 1234567890;
     private List<Transaction> allTransactions = new List<Transaction>();
-    
 
-    // Constructor 
+    // Constructor
     public BankAccount(string name, decimal initialBalance)
     {
         this.Owner = name;
@@ -252,11 +250,11 @@ public class BankAccount
 
 #!markdown
 
-## #6: Fixing Errors
+## #6: Fixing errors
 
 You may have noticed a red squiggly line under `this.Balance`. There's a new error you created! Because whenever you're getting Balance, it goes through a process of summing up the list of transactions, you can't just say that `Balance` is initial balance. You won't fix this entirely in this module, but you can make the code usable for now.
 
-> remove the line `this.Balance = initialBalance`
+> Remove the line `this.Balance = initialBalance`.
 
 #!csharp
 
@@ -280,9 +278,9 @@ public class BankAccount
     }
     private static int accountNumberSeed = 1234567890;
     private List<Transaction> allTransactions = new List<Transaction>();
-    
 
-    // Constructor 
+
+    // Constructor
     public BankAccount(string name, decimal initialBalance)
     {
         this.Owner = name;
@@ -305,7 +303,7 @@ public class BankAccount
 
 # Review: Where did Initial Balance go?
 
-Here's our final code for this module below. There's a problem though! You no longer have an initial balance, and have 0 money! Since you tied up your balance with transactions, you're gonna need to be able to make deposits and withdrawals to put money in the bank. You'll learn that in the next module!
+Here's our final code for this module below. There's a problem though! You no longer have an initial balance and have 0 money! Since you tied up your balance with transactions, you're gonna need to be able to make deposits and withdrawals to put money in the bank. You'll learn that in the next module!
 
 > Run the code cells below.
 >
@@ -318,10 +316,10 @@ public class Transaction
     // Properties (#2)
     public decimal Amount { get; }
     public DateTime Date { get; }
-    public string Notes 
-    { 
+    public string Notes
+    {
         get;
-        
+
     }
 
     // Constructor (#3)
@@ -343,9 +341,9 @@ public class BankAccount
     public string Number { get; }
     public string Owner { get; set; }
     public decimal Balance  //(#5)
-    { 
+    {
         get
-        
+
         {
             decimal balance = 0;
             foreach (var item in allTransactions)
@@ -355,12 +353,12 @@ public class BankAccount
 
             return balance;
         }
-     
-    
+
+
     }
     private static int accountNumberSeed = 1234567890; //(#1)
     private List<Transaction> allTransactions = new List<Transaction>(); //(#4)
-    
+
 
     // Constructor
     public BankAccount(string name, decimal initialBalance)
@@ -369,7 +367,7 @@ public class BankAccount
         //(#6: deleted "this.Balance = initialBalance;")
         this.Number = accountNumberSeed.ToString(); //(#1)
         accountNumberSeed++; //(#1)
-        
+
     }
 
     // Functions
@@ -389,23 +387,22 @@ Console.WriteLine($"Account {account.Number} was created for {account.Owner} wit
 
 #!markdown
 
-# Continue Learning
+# Continue learning
 
 There are plenty more resources out there to learn!
 > [⏩ Next Module - Methods and Exceptions](http://tinyurl.com/csharp-notebook15)
 >
-> [⏪ Last Module - Objects and Classes](http://tinyurl.com/csharp-notebook13)  
+> [⏪ Last Module - Objects and Classes](http://tinyurl.com/csharp-notebook13)
 >
 > [Watch the video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17)
 >
 > [Documentation: Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=Educationalcsharp-c9-scottha)
 >
 > [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
->
 
 #!markdown
 
-# Other Resources
+# Other resources
 
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)

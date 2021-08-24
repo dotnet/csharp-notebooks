@@ -82,8 +82,8 @@ Console.WriteLine(sayHello);
 
 ## Changing Case
 
-Sometimes you need your strings to be all UPPER CASE or all lover case. `ToUpper` and `ToLower` do just that.
-> The example below seems a bit mixed up. Can you fix it so "whisper" is all lower case, and "shout" is all upper case?
+Sometimes you need your strings to be all UPPERCASE or all lowercase. `ToUpper` and `ToLower` do just that.
+> The following example seems a bit mixed up. Can you fix it so "whisper" is all lowercase, and "shout" is all uppercase?
 
 #!csharp
 
@@ -95,9 +95,9 @@ Console.WriteLine("sHoUt".ToLower());
 # Playground
 
 Now it's your turn to play around with what you've learned. Try these exercises:
-> Create three variables of three different people
+> Create three variables of three different people.
 >
-> Find the length of the first person, make the second person all caps, and the third person al lower case
+> Find the length of the first person, make the second person all caps, and the third person all lowercase.
 >
 > How many letters are in "supercalifragilisticexpialidocious"?
 >
@@ -113,23 +113,22 @@ Console.WriteLine("       friendship bracelet     ");
 
 #!markdown
 
-# Continue Learning
+# Continue learning
 
 There are plenty more resources out there to learn!
 > [⏩ Next Module - Searching Strings](http://tinyurl.com/csharp-notebook03)
 >
-> [⏪ Last Module - Hello World](http://tinyurl.com/csharp-notebook01)  
+> [⏪ Last Module - Hello World](http://tinyurl.com/csharp-notebook01)
 >
 > [Watch the video](https://www.youtube.com/watch?v=JSpC7Cz64h0&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=3)
 >
 > [Documentation: Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
-> 
-> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 >
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
 
 #!markdown
 
-# Other Resources
+# Other resources
 
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
