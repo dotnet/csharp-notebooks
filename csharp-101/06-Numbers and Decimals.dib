@@ -6,9 +6,9 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=kdKcpF9roeU&list=P
 
 #!markdown
 
-## Working With Fixed Point types 
+## Working With Fixed Point types
 
-the `Decimal` type is similar to `double`s. They don't have as big a range, but they do have much higher precision.
+The `Decimal` type is similar to `double`s. They don't have as big a range, but they do have much higher precision.
 
 > What's the range of a decimal type?
 
@@ -34,19 +34,19 @@ Console.WriteLine(c / d);
 
 #!markdown
 
-You can see that a decimals have a higher precision than doubles. 
+You can see that a decimals have a higher precision than doubles.
 
 #!markdown
 
 # Playground
 
-Play around with what you've learned! Here's some starting ideas:  
+Play around with what you've learned! Here's some starting ideas:
 
-> Can you find the area of a circle with a radius 2.5 inches?
+> Can you find the area of a circle with a radius of 2.5 inches?
 >
-> What does the answer look like when you change number types, such as int, short, and decimal. 
+> What does the answer look like when you change number types, such as int, short, and decimal.
 >
-> Hint: You can write `Math.PI` as pi, instead of writing the answer out
+> Hint: You can write `Math.PI` as pi, instead of writing the answer out.
 
 #!csharp
 
@@ -54,23 +54,22 @@ Console.WriteLine("Playground");
 
 #!markdown
 
-# Continue Learning
+# Continue learning
 
 There are plenty more resources out there to learn!
 > [⏩ Next Module - Branches (if)](http://tinyurl.com/csharp-notebook07)
 >
-> [⏪ Last Module - Numbers and Integer Precision](http://tinyurl.com/csharp-notebook05)  
+> [⏪ Last Module - Numbers and Integer Precision](http://tinyurl.com/csharp-notebook05)
 >
 > [Watch the video](https://www.youtube.com/watch?v=kdKcpF9roeU&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=7)
 >
 > [Documentation: Numbers in C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp?WT.mc_id=Educationalcsharp-c9-scottha)
 >
 > [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
->
 
 #!markdown
 
-# Other Resources
+# Other resources
 
 Here's some more places to explore:
 > [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
