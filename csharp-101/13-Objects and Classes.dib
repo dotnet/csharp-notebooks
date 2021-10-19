@@ -138,9 +138,9 @@ Console.WriteLine($"Account{account.Number} was created for {account.Owner} with
 
 #!markdown
 
-## What about the `account.Owner`?
+## What about the `account.Number`?
 
-You may have noticed that the code didn't print out anything for `account.Owner`. That's okay! You haven't put anything in it yet. You'll learn about it in the next module.
+You may have noticed that the code didn't print out anything for `account.Number`. That's okay! You haven't put anything in it yet. You'll learn about it in the next module.
 
 #!markdown
 
