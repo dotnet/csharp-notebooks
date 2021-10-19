@@ -18,8 +18,8 @@ It's a powerful and widely used programming language that you can use to make we
 
 ## C#: Hello World
 
-write your first C# program! It outputs a string "Hello World" to the console.
-> Hover your mouse over the code below. On the left side, a little "play" icon should show up. Click that and the code will run!
+Write your first C# program! It outputs a string "Hello World" to the console.
+> Hover your mouse over the following code. On the left side, a little "play" icon should show up. Click that and the code will run!
 
 #!csharp
 
