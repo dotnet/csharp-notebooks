@@ -24,7 +24,7 @@ What is this saying? Well when you take 11 and divide it by 3, there are 3 3s th
 ## Minimum and Maximum Integer Size
 
 Because of how integers are structured in coding, there is a limit to their size.
-> Find out what it is by running the code below!
+> Find out what it is by running the following code!
 
 #!csharp
 
