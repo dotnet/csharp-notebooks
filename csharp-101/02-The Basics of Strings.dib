@@ -14,7 +14,7 @@ A string is a sequence of characters. A handy metaphor is a friendship bracelet,
 
 `firstFriend` and `secondFriend` are variables of strings. The line within `Console.WriteLine` is also a string. It's a **string literal**. A string literal is text what represents a constant string.
 
-> try that out with the following code. Press play and see what comes out.
+> Try that out with the following code. Press play and see what comes out.
 >
 > Next, try changing the variables to see different names.
 
@@ -30,7 +30,7 @@ Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
 
 As you explore more with strings, you'll find that strings are more than a collection of letters. You can find the length of a string using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string.
 
-> try that out by seeing how long the names of the friends are:
+> Try that out by seeing how long the names of the friends are:
 
 #!csharp
 
@@ -47,7 +47,7 @@ Suppose your strings have leading or trailing spaces (also called **white space*
 
 > Play around with trimming in the following code. The brackets are there to help you see all the white space.
 
-**Editing Note: Should this be all one thing? or multiple breakups of code and markdown?*
+**Editing Note: Should this be all one thing? Or multiple breakups of code and markdown?*
 
 #!csharp
 

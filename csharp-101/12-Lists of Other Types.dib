@@ -28,7 +28,7 @@ foreach (var item in fibonacciNumbers)
 
 Now, you don't want just 1,1 in it! You want more of the sequence. In this code, you're using the last two numbers of the list, adding them together to make the next number, then adding it to the list.
 
-> Run the code to try it out
+> Run the code to try it out.
 
 #!csharp
 
