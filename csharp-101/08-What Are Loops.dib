@@ -6,7 +6,7 @@ Watch the full [C# 101 video](https://www.youtube.com/watch?v=z31m5Up_gSQ&list=P
 #!markdown
 
 Loops are a way to repeat an action multiple times. You can use `while` to do that.
-> Try out this first loop
+> Try out this first loop:
 
 #!csharp
 
@@ -65,7 +65,7 @@ In the `while` loop, nothing is printed out, but in the `do` loop, you get one p
 
 #!csharp
 
-for(int counter = 0; counter < 10; counter++)
+for (int counter = 0; counter < 10; counter++)
 {
   Console.WriteLine($"Hello World! The counter is {counter}");
 }
@@ -74,7 +74,7 @@ for(int counter = 0; counter < 10; counter++)
 
 ### What's in the parentheses?
 
-There's three parts in the `for` loop parentheses: `int counter = 0`, `counter < 10`, and `counter++`.
+There are three parts in the `for` loop parentheses: `int counter = 0`, `counter < 10`, and `counter++`.
 You can think of them as the start point, the end point, and the step size.
 `int counter = 0` is just setting up the counter. You're starting at 0.
 `counter < 10` is the conditional that gets checked at the start of every loop. Once the conditional is false (in this case, once counter is not less than 10), the loop is done and the code moves on.
