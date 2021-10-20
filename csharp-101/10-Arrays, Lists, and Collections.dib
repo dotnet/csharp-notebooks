@@ -36,7 +36,7 @@ foreach (var name in names)
 
 The previous code is a bit more clear to read for human than the code below, but the code below has some more recognizable code, based off of what we've learned.
 These are really just two different styles of writing the same code. Feel free to use whatever makes the most sense to you!
-> Run the code below.
+> Run the following code.
 >
 > Can you identify similar parts of code between the two different methods?
 >
@@ -101,9 +101,9 @@ for (int i = 0;i < names.Count; i++)
 ## Printing a specific item
 
 What if you don't want to print out all of your friends? What if you just want to print out one friend? That's where brackets come in.
-> Run the code
+> Run the code.
 >
-> try printing a different spot in the list
+> Try printing a different spot in the list.
 >
 > Do you need a 0 or 1 to print the first item in a list?
 
@@ -114,22 +114,22 @@ Console.WriteLine(names[1]);
 
 #!markdown
 
-Don't forget that lists are "0" based. The first spot it the "0th" spot.
+Don't forget that lists are "0" based. The first spot is the "0th" spot.
 
 #!markdown
 
 # Playground
 
 Play around with what you've learned! Here's some starting ideas:
-> Make a list of groceries you need called `groceries`
+> Make a list of groceries you need called `groceries`.
 >
 > Can you print out "buy \<grocery\>!" for every item?
 >
 > What's the 3rd item of the list? Is that the same as `groceries[3]?`
 >
-> Make sure to add "toothpaste"
+> Make sure to add "toothpaste".
 >
-> Remove your least favorite item
+> Remove your least favorite item.
 >
 > Now what's third on the list?
 
