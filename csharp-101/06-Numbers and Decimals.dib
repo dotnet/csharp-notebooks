@@ -1,0 +1,79 @@
+#!markdown
+
+# Numbers and Decimals
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=kdKcpF9roeU&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=7) for this module.
+
+#!markdown
+
+## Working With Fixed Point types
+
+The `Decimal` type is similar to `double`s. They don't have as big a range, but they do have much higher precision.
+
+> What's the range of a decimal type?
+
+#!csharp
+
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+
+#!markdown
+
+> How do doubles and decimals compare in precision?
+
+#!csharp
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+
+#!markdown
+
+You can see that a decimals have a higher precision than doubles.
+
+#!markdown
+
+# Playground
+
+Play around with what you've learned! Here's some starting ideas:
+
+> Can you find the area of a circle with a radius of 2.5 inches?
+>
+> What does the answer look like when you change number types, such as int, short, and decimal.
+>
+> Hint: You can write `Math.PI` as pi, instead of writing the answer out.
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+> [⏩ Next Module - Branches (if)](http://tinyurl.com/csharp-notebook07)
+>
+> [⏪ Last Module - Numbers and Integer Precision](http://tinyurl.com/csharp-notebook05)
+>
+> [Watch the video](https://www.youtube.com/watch?v=kdKcpF9roeU&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=7)
+>
+> [Documentation: Numbers in C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

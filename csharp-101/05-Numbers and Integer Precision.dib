@@ -1,0 +1,138 @@
+#!markdown
+
+# Numbers and Integer Precision
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=31EmPADtv4w&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=6) for this module.
+
+Like you learned in the last module, when doing math with integers, you only get integers as a result, no decimals or fractions. The numbers are `truncated`, which just means that the remainder is cut off. You can find the remainder with `%`, the remainder operator. The remainder is the left over amount from a division problem.
+> Lets try it out!
+
+#!csharp
+
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+int e = (a + b) % c;
+Console.WriteLine($"quotient: {d}");
+Console.WriteLine($"remainder: {e}");
+
+#!markdown
+
+What is this saying? Well when you take 11 and divide it by 3, there are 3 3s that fit into 11, with two leftover, or remaining. That's why 3 is the quotient, and 2 is the remainder
+
+## Minimum and Maximum Integer Size
+
+Because of how integers are structured in coding, there is a limit to their size.
+> Find out what it is by running the following code!
+
+#!csharp
+
+int max = int.MaxValue;
+int min = int.MinValue;
+Console.WriteLine($"The range of integers is {min} to {max}");
+
+#!markdown
+
+That's still a pretty big range!
+> But what happens if you try to go beyond?
+
+#!csharp
+
+int what = max + 3;
+Console.WriteLine($"An example of overflow: {what}");
+
+#!markdown
+
+That number, which should be really big, is now close to the minimum! This is because an `overflow` "wraps," going back to the minimum and then continuing to count.
+
+## Doubles: Precision and Size
+
+Doubles are another form of numbers. They can hold and answer in floating point.
+> Repeat the same code from the beginning, and see the difference a double makes.
+
+#!csharp
+
+double a = 7;
+double b = 4;
+double c = 3;
+double d = (a + b) / c;
+Console.WriteLine(d);
+
+#!markdown
+
+> Here's a more complicated expression to try:
+
+#!csharp
+
+double a = 19;
+double b = 23;
+double c = 8;
+double d = (a + b) / c;
+Console.WriteLine(d);
+
+#!markdown
+
+> Find out the range of doubles:
+
+#!csharp
+
+double max = double.MaxValue;
+double min = double.MinValue;
+Console.WriteLine($"The range of double is {min} to {max}");
+
+#!markdown
+
+That's pretty big! Much larger than integers.
+
+Of course, doubles aren't perfect. They also have rounding errors.
+> Check out this rounding:
+
+#!csharp
+
+double third = 1.0 / 3.0;
+Console.WriteLine(third);
+
+#!markdown
+
+Technically, 1/3 converted to decimal should be 3 repeating infinitely, but that isn't practical in coding. It's good to be aware of though, if you're working in extremely precise variables.
+
+#!markdown
+
+# Playground
+
+Play around with what you've learned! Here's some starting ideas:
+> Got any homework or projects you need to do math in? Try out using code in place of a calculator.
+>
+> The moon is 238,855 miles away from Earth. If you were using the distance to the moon in a coding problem, would you need to use integers or doubles? What if you were measuring in inches? What about the sun? It's 92,955,828 miles away.
+>
+> If a person was stuck using integers, how might they print out a division problem in a mixed fraction format?
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue learning
+
+> [⏩ Next Module - Numbers and Decimals](http://tinyurl.com/csharp-notebook06)
+>
+> [⏪ Last Module - Numbers and Integer Math](http://tinyurl.com/csharp-notebook04)
+>
+> [Watch the video](https://www.youtube.com/watch?v=31EmPADtv4w&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=6)
+>
+> [Documentation: Numbers in C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

@@ -1,0 +1,125 @@
+#!markdown
+
+# Branches (if)
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=y4OTe8LSokg&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=8) for this module.
+
+#!markdown
+
+## Basic If
+
+If statements makes decisions.
+
+> Try out our first if statement:
+
+#!csharp
+
+int a = 5;
+int b = 6;
+if (a + b > 10)
+    Console.WriteLine("The answer is greater than 10.");
+
+#!markdown
+
+In words, this if statement is saying "if a plus b is greater than 10, write the line 'The answer is greater than 10'".
+> What would happen if a + b is less than 10? Try editing the previous code to see.
+
+Did nothing happen? That's great! Since the the **conditions** (a + b is greater than 10) of the if statement weren't met, the code didn't go into the if statement, and therefore had nothing to print.
+
+#!markdown
+
+## What's a condition?
+
+The `condition` is the statement in parentheses after the `if`. A `condition` is a boolean, which means it has to return a true or false. that means using symbols such as `>`, `<`, `<=`, `>=` or `==`.
+> Practice boolean statements. Try out some different symbols and numbers to see the answer.
+
+#!csharp
+
+bool outcome = 3 > 5;
+Console.WriteLine("This condition is " + outcome);
+
+#!markdown
+
+## Else
+
+Before, if the conditions of the `if` statement weren't met, the entire if statement was skipped. But what if you want something to happen in both cases? `else` is what happens if the conditional comes out false.
+
+> Run this code and change the conditional a couple times to see the different outcomes.
+
+#!csharp
+
+int a = 5;
+int b = 3;
+if (a + b > 10)
+    Console.WriteLine("The answer is greater than 10");
+else
+    Console.WriteLine("The answer is not greater than 10");
+
+#!markdown
+
+## Multi-line If statements
+
+What if you want more complex code in your `if` statements? That's great, just add curly braces around what you want done.
+
+> Try it out! Run the following code.
+
+#!csharp
+
+int c = 4;
+if ((a + b + c > 10) && (a == b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("And the first number is equal to the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("Or the first number is not equal to the second");
+}
+
+#!markdown
+
+`&&` means "and". It's a way to link up multiple conditionals. You can also use `||` as "or".
+
+  The `if` conditional above checks that adding a, b, and c up is greater than 10 AND that a equals b. If both are true, it goes into the `if` statement; otherwise, it goes into the `else` part.
+
+#!markdown
+
+# Playground
+
+Play around with what you've learned! Here's some starting ideas:
+> Try out the "or" symbol in place of the "and" in the previous code. What do you need to do to get true vs. false?
+>
+> What if you put if statements inside of if statements (a nested if statement)?
+>
+> Can you draw out the flow of an if statement? A nested if statement?
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+> [⏩ Next Module - What Are Loops](http://tinyurl.com/csharp-notebook08)
+>
+> [⏪ Last Module - Numbers and Decimal](http://tinyurl.com/csharp-notebook06)
+>
+> [Watch the video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2)
+>
+> [Documentation: Branches and Loops in C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops-local?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

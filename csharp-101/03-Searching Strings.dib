@@ -1,0 +1,85 @@
+#!markdown
+
+# Searching Strings
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=4) for this module.
+
+#!markdown
+
+## Contains
+
+Does your string contain another string within it? You can use `Contains` to find out!
+The `Contains` method returns a *boolean*. That's a type represented by the keyword `bool` that can hold two values: `true` or `false`. In this case, the method returns `true` when sought string is found, and `false` when it's not found.
+> Run the following code.
+>
+> What else would or wouldn't be contained?
+>
+> Does case matter?
+>
+> Can you store the return value of the `Contains` method> Remember the type of the result is a `bool`.
+
+#!csharp
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.Contains("goodbye"));
+Console.WriteLine(songLyrics.Contains("greetings"));
+
+#!markdown
+
+## StartsWith and EndsWith
+
+`StartsWith` and `EndsWith` are methods similar to `Contains`, but more specific. They tell you if a string starts with or ends with the string you're checking. It has the same structure as `Contains`, that is: `bigstring.StartsWith(substring)`
+> Now you try!
+> In the following code, try searching the line to see if it starts with "you" or "I".
+> Next, see if the code ends with "hello" or "goodbye".
+
+#!csharp
+
+string songLyrics = "You say goodbye, and I say hello";
+
+#!markdown
+
+# Playground
+
+Play around with what you've learned! Here's some starting ideas:
+> How many lines say hello?
+> Which lines start with "You"?
+> Which lines end with "no"?
+> Think back to the previous module. Can you make some lines all uppercase and some lines all lowercase?
+> If you change case, how does that affect `Contains`?
+
+#!csharp
+
+Console.WriteLine("Playground");
+String line1 = "You say yes, I say no";
+String line2 = "You say stop and I say go, go, go";
+String line3 = "Oh, no";
+String line4 = "You say goodbye and I say hello";
+String line5 = "Hello, hello";
+String line6 = "I don't know why you say goodbye, I say hello";
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+> [⏩ Next Module - Numbers and Integer Math](http://tinyurl.com/csharp-notebook04)
+>
+> [⏪ Last Module - The Basics of Strings](http://tinyurl.com/csharp-notebook02)
+>
+> [Watch the video](https://www.youtube.com/watch?v=JL30gSE3WaQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=4)
+>
+> [Documentation: Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

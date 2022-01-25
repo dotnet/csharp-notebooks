@@ -1,0 +1,110 @@
+#!markdown
+
+# Hello World
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2) for this module.
+
+## What do you do with this notebook?
+
+This notebook is intended to help you learn the coding language C#. You can:
+
+- Work through these notebooks on your own.
+- Work through them while watching the C# 101 videos.
+- Use these notebooks as prompts to write your own code in Visual Studio.
+
+## What is C#?
+
+It's a powerful and widely used programming language that you can use to make websites, games, mobile apps, desktop apps, and more. C# is part of the .NET programming platform, which includes libraries for all those applications. Learn C#, get started, and it'll give you the world.
+
+## C#: Hello World
+
+Write your first C# program! It outputs a string "Hello World" to the console.
+> Hover your mouse over the following code. On the left side, a little "play" icon should show up. Click that and the code will run!
+
+#!csharp
+
+Console.WriteLine("Hello World!");
+
+#!markdown
+
+`Console.WriteLine` is a method that is used to print a message to a text console. In this case, you specified "Hello World" as the output.
+
+# Declare and use variables
+
+A **variable** is a symbol you can use to run the same code with different values. For example, you can declare a new variable named `aFriend` that you can use with `Console.WriteLine` to output a string. You can declare this variable by using the type `string` or by using the `var` keyword that will automatically figure out the type for you.
+
+> Go ahead and run the following code to see the output of **Jayme**.
+>
+> Next, change the name in the variable and run it again to see something different.
+
+#!csharp
+
+var aFriend = "Jayme";
+Console.WriteLine(aFriend);
+
+#!markdown
+
+# Combining Strings
+
+You may have noticed that the word "Hello" was missing from the last code block. You can fix it by combining multiple string together using `+` to create a new string that it output to the console.
+
+> Run the code to write out a friendly welcome!
+
+#!csharp
+
+Console.WriteLine("Hello " + aFriend + "!");
+
+#!markdown
+
+# String Interpolation
+
+You just used `+` to build a new string from a **variable** and a **constant**. There's a better way to do this by placing the variable between `{`and `}` to tell C# to replace that text with the value of the variable. This is called **string interpolation**. You can then add a `$` before the opening quote to enable string interpolation for the string.
+
+#!csharp
+
+aFriend = "string interpolation";
+Console.WriteLine($"Hello {aFriend}!");
+
+#!markdown
+
+You did it! You just created your first C# application and learned about combining strings with string interpolation.
+
+#!markdown
+
+# Playground: Try it yourself
+
+Each module will have a little "playground" at the end. This is a space for you to try writing some code yourself, instead of looking at prewritten code.
+Try out printing words and variables! Here are some prompts to try:
+> Print out a personal motto.
+>
+> Make some variables with your favorite foods, and then write a little story involving them.
+>
+> **Challenge!**
+>
+> Make your own Mad Libs! Make a few variables that are verbs, nouns, etcetera, and then use them when you write a story. Have a friend decide the value of each variable and read it to them for a laugh!
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+>> [⏩ Next Module - The Basics of Strings](http://tinyurl.com/csharp-notebook02)
+>
+> [Watch the video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2)
+>
+> [Documentation: Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

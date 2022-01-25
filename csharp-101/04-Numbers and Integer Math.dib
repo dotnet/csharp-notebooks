@@ -1,0 +1,143 @@
+#!markdown
+
+# Numbers and Integer Math
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=jEE0pWTq54U&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=5) for this module.
+
+#!markdown
+
+## Integer Math
+
+You have a few `integers` defined below. An `integer` is a positive or negative whole number.
+> Before you run the code, what should c be?
+
+#!markdown
+
+## Addition
+
+#!csharp
+
+int a = 18;
+int b = 6;
+int c = a + b;
+Console.WriteLine(c);
+
+#!markdown
+
+## Subtraction
+
+#!csharp
+
+int c = a - b;
+Console.WriteLine(c);
+
+#!markdown
+
+## Multiplication
+
+#!csharp
+
+int c = a * b;
+Console.WriteLine(c);
+
+#!markdown
+
+## Division
+
+#!csharp
+
+int c = a / b;
+Console.WriteLine(c);
+
+#!markdown
+
+# Order of operations
+
+C# follows the order of operation when it comes to math. That is, it does multiplication and division first, then addition and subtraction.
+> What would the math be if C# didn't follow the order of operation, and instead just did math left to right?
+
+#!csharp
+
+int a = 5;
+int b = 4;
+int c = 2;
+int d = a + b * c;
+Console.WriteLine(d);
+
+#!markdown
+
+## Using parenthesis
+
+You can also force different orders by putting parentheses around whatever you want done first
+> Try it out
+
+#!csharp
+
+int d = (a + b) * c;
+Console.WriteLine(d);
+
+#!markdown
+
+You can make math as long and complicated as you want.
+> Can you make this line even more complicated?
+
+#!csharp
+
+int d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+Console.WriteLine(d);
+
+#!markdown
+
+## Integers: Whole numbers no matter what
+
+Integer math will always produce integers. What that means is that even when math should result in a decimal or fraction, the answer will be truncated to a whole number.
+> Check it out. WHat should the answer truly be?
+
+#!csharp
+
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+Console.WriteLine(d);
+
+#!markdown
+
+# Playground
+
+Play around with what you've learned! Here's some starting ideas:
+> Do you have any homework or projects that need math? Try using code in place of a calculator!
+>
+> How do integers round? Do they always round up? down? to the nearest integer?
+>
+> How do the Order of Operations work? Play around with parentheses.
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+> [⏩ Next Module - Numbers and Integer Precision](http://tinyurl.com/csharp-notebook05)
+>
+> [⏪ Last Module - Searching Strings](http://tinyurl.com/csharp-notebook03)
+>
+> [Watch the video](https://www.youtube.com/watch?v=jEE0pWTq54U&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=5)
+>
+> [Documentation: Numbers in C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

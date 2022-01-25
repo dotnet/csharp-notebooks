@@ -1,0 +1,252 @@
+#!markdown
+
+# Objects and Classes
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16) for this module.
+
+#!markdown
+
+## Object Oriented Programming
+
+Objects are a way to mimic the real world in coding. If you take the concept of a person, they can have a name, address, height, all of these properties that change from person to person. Object oriented coding packages that type of information, so that you can easily make a person with all those details. There are lots of stuff you can do with objects, but for now you can start with the basics.
+
+#!markdown
+
+## Making a Bank
+
+Over the next few modules, you'll make a bank account object with these attributes:
+
+> It has a 10-digit number that uniquely identifies the bank account.
+>
+> It has a string that stores the name or names of the owners.
+>
+> The balance can be retrieved.
+>
+> It accepts deposits.
+>
+> It accepts withdrawals.
+>
+> The initial balance must be positive.
+>
+> Withdrawals cannot result in a negative balance.
+>
+
+You can categorize these goals:
+
+- **Properties**: details about the object (how much money it has, the name of the account).
+- **Actions**: things the object can do (accept deposits and withdrawals).
+- **Rules**: guidelines for the object so that it doesn't try to do impossible things (make sure that the account can never go negative).
+
+#!markdown
+
+## Make it yourself
+
+Below is a blank `BankAccount` object that you're going to create. You'll add in code step by step.
+
+#!markdown
+
+## #1: Properties
+
+Properties are a nice little list of values each object holds.
+`get` and `set`: sometimes you want to only want a user to see a variable but not change it. Other times you want the user to be able to change a variable. `get` lets you see the variable, `set` lets you change it. (right?)
+
+> Copy the code below and paste it into the `BankAccount` object under `//Properties`
+
+```csharp
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance { get; }
+```
+
+#!csharp
+
+public class BankAccount
+{
+    // Properties (paste under here)
+
+    // Constructor
+
+    // Functions
+}
+
+#!markdown
+
+## #2: Constructor
+
+This method is what creates a specific instance of an object. Making a `BankAccount` class, like you're doing now, is like making a template for all bank accounts. It's not a singular individual account. The constructor is what will make a singular account, with all the persons actual details. You give the constructor all the details you want for a specific account, and it assigns the details to the new object's properties.
+
+`this` is a styling choice. It makes explicit that the variable "Owner" is the variable of that specific instance. In the future, you'll have two instances of an object to interact, and `this` will become a bit more explicitly helpful. You can also write `Owner` instead of `this.Owner` if you want!
+
+You're taking the variables `name` and `initialBalance` and creating a bank account that contains these variables.
+
+> Copy paste the constructor into the `BankAccount` below, under `//Constructor`
+
+```csharp
+public BankAccount(string name, decimal initialBalance)
+{
+    this.Owner = name;
+    this.Balance = initialBalance;
+}
+```
+
+#!csharp
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance { get; }
+
+    // Constructor (Paste here!)
+
+    // Functions
+}
+
+#!markdown
+
+## #3: Making an Instance
+
+Now that you have the code written out, see what happens if you make a `BankAccount`!
+
+> Run the two code cells code below to create a specific bank account. Does it do what you expected?
+>
+> Change the code to make a bank account for yourself. How much money do you want in your bank account?
+
+#!csharp
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance { get; }
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Balance = initialBalance;
+    }
+    // Functions
+}
+
+#!csharp
+
+var account = new BankAccount("Kendra", 1000);
+Console.WriteLine($"Account{account.Number} was created for {account.Owner} with {account.Balance} dollars");
+
+#!markdown
+
+## What about the `account.Number`?
+
+You may have noticed that the code didn't print out anything for `account.Number`. That's okay! You haven't put anything in it yet. You'll learn about it in the next module.
+
+#!markdown
+
+## #4: Functions
+
+Functions exist to do actions with an object or change the object variables. These two functions will make a deposit (add money) and make a withdrawal (take out money). You'll be adding stuff in the methods later, but for now you just want to add the empty versions.
+
+> copy the functions below and add them to `BankAccount` under `//Functions`
+
+```csharp
+public void MakeDeposit(decimal amount, DateTime date, string note)
+{
+}
+
+public void MakeWithdrawal(decimal amount, DateTime date, string note)
+{
+}
+```
+
+#!csharp
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance { get; }
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Balance = initialBalance;
+    }
+
+    // Functions (paste here!)
+}
+
+#!markdown
+
+# Review
+
+Here's the version of `BankAccount` you end up with in this module. You'll be adding more to it in the next module, but why don't you try out stuff, just to see what you need to learn?
+
+> Can you add a 10-digit code? What would your object need to know to make sure the code was unique?
+>
+> Try out adding to the deposit function! What do you want it to do?
+>
+> How might you check that the initial balance is positive?
+
+#!csharp
+
+public class BankAccount
+{
+    // Variables (#1)
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance { get; }
+
+    // Constructor (#2)
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Balance = initialBalance;
+    }
+
+    // Functions (#4)
+    public void MakeDeposit(decimal amount, DateTime date, string note)
+    {
+    }
+
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
+    }
+}
+
+#!csharp
+
+//Make an instance (#3)
+var account = new BankAccount("Kendra", 1000);
+Console.WriteLine($"Account{account.Number} was created for {account.Owner} with {account.Balance} dollars");
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+> [⏩ Next Module - Methods and Members](http://tinyurl.com/csharp-notebook14)
+>
+> [⏪ Last Module - Lists of Other Types](http://tinyurl.com/csharp-notebook12)
+>
+> [Watch the video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16)
+>
+> [Documentation: Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Resources
+
+Here's some more places to explore:
+> Start at the beginning: [What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+>
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

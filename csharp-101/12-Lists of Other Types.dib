@@ -1,0 +1,101 @@
+#!markdown
+
+# Lists of Other Types
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module.
+
+You've been practicing lists of strings, but you can make a list of anything! Here's a number example.
+
+## Fibonacci
+
+Fibonacci is a cool number sequence. It adds up the last two numbers up to make the next number. You start with 1 and 1
+1 + 1 = 2  (1, 1, 2)
+1 + 2 = 3  (1, 1, 2, 3)
+2 + 3 = 5  (1, 1, 2, 3, 5)
+3 + 5 = 8  (1, 1, 2, 3, 5, 8)
+and so on. There are lots of stuff in nature that follow this number sequence, and has lots of cool stuff if you want to look it up!
+
+> Start with the base numbers: Here's a list with just 1, 1 in it. Run it and see what happens.
+
+#!csharp
+
+var fibonacciNumbers = new List<int> {1, 1};
+
+foreach (var item in fibonacciNumbers)
+    Console.WriteLine(item);
+
+#!markdown
+
+Now, you don't want just 1,1 in it! You want more of the sequence. In this code, you're using the last two numbers of the list, adding them together to make the next number, then adding it to the list.
+
+> Run the code to try it out.
+
+#!csharp
+
+var fibonacciNumbers = new List<int> {1, 1}; // Starting the list off with the basics
+
+var previous = fibonacciNumbers[fibonacciNumbers.Count - 1]; // Take the last number in the list
+var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2]; // Take the second to last number in the list
+
+fibonacciNumbers.Add(previous + previous2); // Add the previous numbers together, and attach the sum to the end of the list
+
+foreach (var item in fibonacciNumbers) // Print out the list
+    Console.WriteLine(item);
+
+#!markdown
+
+## Count -1
+
+Why do you need to do `fibonacciNumbers.Count -1` to get the last number of the list? Well, `Count` tells you how many items are in a list. However, the index of an item starts at zero. So, if you only had one item in your list, the count would be one, but the index of the item would be 0. The index and count of the last item is always one off.
+
+#!markdown
+
+# Challenge: Fibonacci to 20th number
+
+We've given you a base of code that deals with Fibonacci. Can you make a list that has the first 20 fibonacci numbers?
+
+> Make and print a list that has the first 20 fibonacci numbers.
+
+#!csharp
+
+Console.WriteLine("Challenge");
+
+#!markdown
+
+## Tips and tricks
+
+- The final number should be 6765.
+- Could you make a `for` loop? A `foreach` loop? A `while` loop? Which kind of loop do you prefer and which would be more useful?
+- Are you getting close, but are you one number off? That's a really common issue! Remember that `>` and `>=` are similar, but they end up being one off from the other. Try playing around with that?
+- Remember that you're starting with two items in the list already.
+- Stuck? Watch the [C# 101 video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14) for this module. Try out pausing once you get an idea and trying it out first before watching the rest.
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+
+> [⏩ Next Module - Objects and Classes](http://tinyurl.com/csharp-notebook13)
+>
+> [⏪ Last Module - Search, Sort, and Index Lists](http://tinyurl.com/csharp-notebook11)
+>
+> [Watch the video](https://www.youtube.com/watch?v=oIQdb93xewE&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=14)
+>
+> [Documentation: Arrays, Lists, and Collections](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Download Visual Studio](https://visualstudio.microsoft.com/downloads/)
+>

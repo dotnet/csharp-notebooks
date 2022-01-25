@@ -1,0 +1,164 @@
+#!markdown
+
+# Arrays, Lists, and Collections
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=qLeF_wpnVto&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=12) for this module.
+
+#!markdown
+
+Arrays, lists, and collections can be pretty useful. Try looking at a list:
+> Run the following code. Does it print out what you expected?
+
+#!csharp
+
+using System;
+using System.Collections.Generic;
+
+var names = new List<string> { "<name>", "Ana", "Felipe" };
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+#!markdown
+
+## So what does that code mean?
+
+- **System.collections.Generic**: This is a namespace that has lists in it. If you don't tell the code that you're using it, you have to write "Systems.Collections.Generic.List" every time you want to use a list. This saves some typing!
+- **var**: It's what you put when you have a variable, but don't know/care what the variable type is.
+- **List\<string\>**: This means that you're making a list of strings. In place of `string`, you can put in `int`, `double`, or any other variable.
+- **foreach**: This is another for loop! It goes through every item in a list.
+- **name in names**: This is a style that a lot of people prefer. `names` is the whole list that contains plural names. `name` is an individual item in `names`.
+
+#!markdown
+
+## Alternative method
+
+The previous code is a bit more clear to read for human than the code below, but the code below has some more recognizable code, based off of what we've learned.
+These are really just two different styles of writing the same code. Feel free to use whatever makes the most sense to you!
+> Run the following code.
+>
+> Can you identify similar parts of code between the two different methods?
+>
+> Which method do you prefer?
+
+#!csharp
+
+using System;
+using System.Collections.Generic;
+
+var names = new List<string> { "<name>", "Ana", "Felipe" };
+for (int i = 0;i < names.Count; i++)
+{
+    Console.WriteLine($"Hello {names[i].ToUpper()}");
+}
+
+#!markdown
+
+## Add
+
+You can add names to lists pretty easily. Lists have the method `Add()`, which tacks on a new item to the end of the list.
+> Run the code.
+>
+> Then try adding your own name instead.
+
+#!csharp
+
+var names = new List<string> { "<name>", "Ana", "Felipe" };
+
+names.Add("Sophia");
+
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+#!markdown
+
+## Remove
+
+You can also remove names. Try that out:
+
+> Run the code.
+>
+> Then choose which name you want removed.
+>
+> What happens when you try to remove something that isn't there?
+
+#!csharp
+
+var names = new List<string> { "<name>", "Ana", "Felipe" };
+
+names.Remove("<name>");
+
+for (int i = 0;i < names.Count; i++)
+{
+    Console.WriteLine($"Hello {names[i].ToUpper()}");
+}
+
+#!markdown
+
+## Printing a specific item
+
+What if you don't want to print out all of your friends? What if you just want to print out one friend? That's where brackets come in.
+> Run the code.
+>
+> Try printing a different spot in the list.
+>
+> Do you need a 0 or 1 to print the first item in a list?
+
+#!csharp
+
+var names = new List<string> { "<name>", "Sophia", "Felipe" };
+Console.WriteLine(names[1]);
+
+#!markdown
+
+Don't forget that lists are "0" based. The first spot is the "0th" spot.
+
+#!markdown
+
+# Playground
+
+Play around with what you've learned! Here's some starting ideas:
+> Make a list of groceries you need called `groceries`.
+>
+> Can you print out "buy \<grocery\>!" for every item?
+>
+> What's the 3rd item of the list? Is that the same as `groceries[3]?`
+>
+> Make sure to add "toothpaste".
+>
+> Remove your least favorite item.
+>
+> Now what's third on the list?
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Continue learning
+
+There are plenty more resources out there to learn!
+> [⏩ Next Module -Search, Sort, and Index Lists](http://tinyurl.com/csharp-notebook11)
+>
+> [⏪ Last Module -  Combining Branches and Loops](http://tinyurl.com/csharp-notebook09)
+>
+> [Watch the video](https://www.youtube.com/watch?v=qLeF_wpnVto&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=12)
+>
+> [Documentation: Arrays, Lists, and Collections](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to explore:
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)

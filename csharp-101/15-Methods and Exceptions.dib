@@ -1,0 +1,519 @@
+#!markdown
+
+# Methods and Exceptions
+
+Watch the full [C# 101 video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) for this module.
+
+Below is the code you've made so far. Balance is gotten by summing up the lists of transactions, but you haven't written a way to add a transaction. This happens plenty of times in coding, where to make something more robust, you have to take a step back before going forward.
+
+> Run the code cells below.
+
+#!csharp
+
+public class Transaction
+{
+    // Properties
+    public decimal Amount { get; }
+    public DateTime Date { get; }
+    public string Notes
+    {
+        get;
+
+    }
+
+    // Constructor
+    public Transaction(decimal amount, DateTime date, string note)
+    {
+        this.Amount = amount;
+        this.Date = date;
+        this.Notes = note;
+    }
+}
+
+#!csharp
+
+using System.Collections.Generic;
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance
+    {
+        get
+
+        {
+            decimal balance = 0;
+            foreach (var item in allTransactions)
+            {
+                balance += item.Amount;
+            }
+
+            return balance;
+        }
+
+    }
+    private static int accountNumberSeed = 1234567890;
+    private List<Transaction> allTransactions = new List<Transaction>();
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Number = accountNumberSeed.ToString();
+        accountNumberSeed++;
+
+    }
+
+    // Functions
+    public void MakeDeposit(decimal amount, DateTime date, string note)
+    {
+    }
+
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
+    }
+}
+
+#!csharp
+
+// Testing Code
+
+var account = new BankAccount("Kendra", 1000);
+Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} dollars");
+
+#!markdown
+
+## #1: Adding deposits
+
+First things first, time to make a deposit function. This addition will make a transaction listing the amount, date, and a note that you're depositing, and then adds it to the transaction list.
+
+> Add this code inside MakeDeposit.
+
+```csharp
+    var deposit = new Transaction(amount, date, note);
+    allTransactions.Add(deposit);
+```
+
+#!csharp
+
+using System.Collections.Generic;
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance
+    {
+        get
+
+        {
+            decimal balance = 0;
+            foreach (var item in allTransactions)
+            {
+                balance += item.Amount;
+            }
+
+            return balance;
+        }
+
+
+    }
+    private static int accountNumberSeed = 1234567890;
+    private List<Transaction> allTransactions = new List<Transaction>();
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Number = accountNumberSeed.ToString();
+        accountNumberSeed++;
+
+    }
+
+    // Functions
+    public void MakeDeposit(decimal amount, DateTime date, string note)
+    {
+        //Add code here!
+    }
+
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
+    }
+}
+
+#!markdown
+
+## #2: Exceptions
+
+But what if someone tries to deposit negative money? That doesn't make logical sense, but currently the method allows for that. What you can do is make an exception. Before doing anything, you check that the amount deposited is more than 0. If it is, awesome, the code moves on to adding the transaction. If not, the code throws an exception, where it stops the code and prints out the issue.
+
+> Place this code in the very beginning of the `MakeDeposit` method.
+
+```csharp
+if (amount <= 0)
+    {
+        throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
+    }
+```
+
+#!csharp
+
+using System.Collections.Generic;
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance
+    {
+        get
+
+        {
+            decimal balance = 0;
+            foreach (var item in allTransactions)
+            {
+                balance += item.Amount;
+            }
+
+            return balance;
+        }
+
+    }
+    private static int accountNumberSeed = 1234567890;
+    private List<Transaction> allTransactions = new List<Transaction>();
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Number = accountNumberSeed.ToString();
+        accountNumberSeed++;
+
+    }
+
+    // Functions
+    public void MakeDeposit(decimal amount, DateTime date, string note)
+    {
+        //Add Code here!
+
+        var deposit = new Transaction(amount, date, note);
+        allTransactions.Add(deposit);
+    }
+
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
+    }
+}
+
+#!markdown
+
+## #3: Adding withdrawal
+
+Now you need to do the same thing for the withdrawal!
+
+> Add this code to MakeWithdrawal.
+
+```csharp
+if (amount <= 0)
+    {
+        throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
+    }
+    if (Balance - amount < 0)
+    {
+        throw new InvalidOperationException("Not sufficient funds for this withdrawal");
+    }
+    var withdrawal = new Transaction(-amount, date, note);
+    allTransactions.Add(withdrawal);
+```
+
+#!csharp
+
+using System.Collections.Generic;
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance
+    {
+        get
+
+        {
+            decimal balance = 0;
+            foreach (var item in allTransactions)
+            {
+                balance += item.Amount;
+            }
+
+            return balance;
+        }
+
+
+    }
+    private static int accountNumberSeed = 1234567890;
+    private List<Transaction> allTransactions = new List<Transaction>();
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Number = accountNumberSeed.ToString();
+        accountNumberSeed++;
+
+    }
+
+    // Functions
+    public void MakeDeposit(decimal amount, DateTime date, string note)
+    {
+        if (amount <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
+        }
+        var deposit = new Transaction(amount, date, note);
+        allTransactions.Add(deposit);
+    }
+
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
+        //Add code here!
+    }
+}
+
+#!markdown
+
+## #4: Creating initial deposit
+
+Now that you have deposits and withdrawals, you can finally make an initial deposit again. What you'll do is create a deposit of the initial amount when you're first constructing the bank account.
+
+> Add this code to the `BankAccount` constructor.
+
+```csharp
+MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
+```
+
+#!csharp
+
+using System.Collections.Generic;
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance
+    {
+        get
+
+        {
+            decimal balance = 0;
+            foreach (var item in allTransactions)
+            {
+                balance += item.Amount;
+            }
+
+            return balance;
+        }
+
+
+    }
+    private static int accountNumberSeed = 1234567890;
+    private List<Transaction> allTransactions = new List<Transaction>();
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+        this.Owner = name;
+        this.Number = accountNumberSeed.ToString();
+        accountNumberSeed++;
+        //(Paste here!)
+
+    }
+
+    // Functions
+    public void MakeDeposit(decimal amount, DateTime date, string note)
+    {
+        if (amount <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
+        }
+        var deposit = new Transaction(amount, date, note);
+        allTransactions.Add(deposit);
+    }
+
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
+        if (amount <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
+        }
+        if (Balance - amount < 0)
+        {
+            throw new InvalidOperationException("Not sufficient funds for this withdrawal");
+        }
+        var withdrawal = new Transaction(-amount, date, note);
+        allTransactions.Add(withdrawal);
+        }
+}
+
+#!markdown
+
+# Check and test your work
+
+There's some added line in the test code, because you can now make deposits and withdrawals. Test it out!
+
+> Run the following cells, including the new stuff in the test code.
+>
+> Make your own deposit and withdrawal.
+
+#!csharp
+
+public class Transaction
+{
+    // Properties
+    public decimal Amount { get; }
+    public DateTime Date { get; }
+    public string Notes { get; }
+
+    // Constructor
+    public Transaction(decimal amount, DateTime date, string note)
+    {
+        this.Amount = amount;
+        this.Date = date;
+        this.Notes = note;
+    }
+}
+
+#!csharp
+
+using System.Collections.Generic;
+
+public class BankAccount
+{
+    // Properties
+    public string Number { get; }
+    public string Owner { get; set; }
+    public decimal Balance
+    {
+        get
+
+        {
+            decimal balance = 0;
+            foreach (var item in allTransactions)
+            {
+                balance += item.Amount;
+            }
+
+            return balance;
+        }
+
+
+    }
+    private static int accountNumberSeed = 1234567890;
+    private List<Transaction> allTransactions = new List<Transaction>();
+
+    // Constructor
+    public BankAccount(string name, decimal initialBalance)
+    {
+
+        this.Owner = name;
+        this.Number = accountNumberSeed.ToString();
+        accountNumberSeed++;
+        MakeDeposit(initialBalance, DateTime.Now, "Initial balance"); //(#4)
+
+    }
+
+    // Functions
+    public void MakeDeposit(decimal amount, DateTime date, string note)
+    {
+        //(#2)
+        if (amount <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
+        }
+        //(#1)
+        var deposit = new Transaction(amount, date, note);
+        allTransactions.Add(deposit);
+    }
+
+    public void MakeWithdrawal(decimal amount, DateTime date, string note)
+    {
+        //(#3)
+        if (amount <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
+        }
+        if (Balance - amount < 0)
+        {
+            throw new InvalidOperationException("Not sufficient funds for this withdrawal");
+        }
+        var withdrawal = new Transaction(-amount, date, note);
+        allTransactions.Add(withdrawal);
+    }
+}
+
+#!csharp
+
+var account = new BankAccount("Kendra", 1000);
+Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} dollars");
+
+account.MakeWithdrawal(500, DateTime.Now, "Rent payment");  //Added test code
+Console.WriteLine(account.Balance);
+account.MakeDeposit(100, DateTime.Now, "Friend paid me back");
+Console.WriteLine(account.Balance);
+
+#!markdown
+
+# Review
+
+You did it! You've now successfully made a bank account class that has the following attributes:
+
+> It has a 10-digit number that uniquely identifies the bank account.
+>
+> It has a string that stores the name or names of the owners.
+>
+> The balance can be retrieved.
+>
+> It accepts deposits.
+>
+> It accepts withdrawals.
+>
+> The initial balance must be positive.
+>
+> Withdrawals cannot result in a negative balance.
+>
+
+## Extra credit
+
+Now that you've created a bank account class, you can play around with it! Here's a challenge:
+> Create a way to list out the list of transactions, including the time and notes.
+
+#!markdown
+
+# Continue learning
+
+You've completed this lesson, congratulations! There are plenty more places to continue learning:
+There are plenty more resources out there to learn!
+> [⏪ Last Module - Methods and Members](http://tinyurl.com/csharp-notebook14)
+>
+> [Watch the video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18)
+>
+> [Documentation: Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=Educationalcsharp-c9-scottha)
+>
+> [Start at the beginning: What is C#?](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=1)
+
+#!markdown
+
+# Other resources
+
+Here's some more places to continue learning:
+
+> [Other 101 Videos](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [C# Documentation](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)
