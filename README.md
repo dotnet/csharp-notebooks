@@ -11,7 +11,7 @@ For more information and resources, visit [Learn to code C#](https://dotnet.micr
 
 ## C# 101
 
-Download or clone this repo and open the `csharp-101` folder in VS Code to get started with the C# 101 notebooks. Or, if you want just tap on one of the Notebook links below and automatically have it open in VS Coded!
+Download or clone this repo and open the `csharp-101` folder in VS Code to get started with the C# 101 notebooks. Or, if you want just tap on one of the Notebook links below and automatically have it open in VS Code!
 
 | # | Topic                         | Notebook Link         | Video Link | Documentation |
 |---|-------------------------------|-----------------------|------------|---------------|
