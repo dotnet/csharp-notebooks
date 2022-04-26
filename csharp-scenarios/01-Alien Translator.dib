@@ -1,0 +1,293 @@
+#!markdown
+
+# Welcome
+
+## Introduction
+In this beginner-friendly coding challenge you’ll learn all about strings and how characters are strung together to form strings! Strings are an important data type used by software developers every day. Today, we’ll be using the C# (pronounced see-sharp) language to translate an alien message to English!
+
+### Learning Objectives
+1. Learn what a string is  
+1. Create string data 
+1. Manipulate string data into a new string with concatenation and interpolation 
+
+### A quick overview of useful terms used in this notebook
+1. [String](https://docs.microsoft.com/dotnet/api/system.string?view=net-6.0)
+2. [Character](https://docs.microsoft.com/dotnet/api/system.char?view=net-6.0) 
+3. [Variable](https://docs.microsoft.com/dotnet/csharp/language-reference/language-specification/variables)
+4. [Console](https://docs.microsoft.com/windows/console/consoles)
+5. [Switch Statement](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/switch-expression)
+6. [foreach Loop](https://docs.microsoft.com/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement)
+
+#!markdown
+
+[Question] Can we add a video here?
+
+#!markdown
+
+## Scenario
+
+Imagine you are a computational linguist hired by the government to help communicate with a group of Aliens that recently landed on Earth. These extraterrestrials speak a non-human language that called language X (for extraterrestrial). Luckily, your linguistics partner arrived at the scene before you and was able to generate English translations for some basic words in language X. She has determined that the aliens want to give humans a message. As her computational linguist counterpart, it is your job to **translate longer messages in language X to English using code**.  
+
+A **Computational Linguist** uses computing and artificial intelligence to study natural languages and natural language patterns. These linguists utilize language data to model different languages and they can apply these models in many different ways. Tools like chat bots, speech recognition systems, and search engines are all build with the help of computational linguistics. 
+
+#!markdown
+
+## Console.WriteLine
+### Introduce yourself to the aliens
+
+When you first arrive at the scene, your linguistic partner encourages you to introduce yourself to the aliens. Because it will be a quick introduction, she’ll translate this statement for you. 
+
+To do this you’ll need to write a string that displays to the console.  
+
+A **string** is a sequence of characters. Strings are a particularly useful data type that allow you to interact with users of your program. In C#, strings start and end with a quotation mark. For example, “this is a string”.  
+
+To greet the aliens, replace *myName* in the below code with your name. Then, run the code.    
+
+#!csharp
+
+Console.WriteLine("Hi extraterrestrials, my name is myName.");
+
+#!markdown
+
+The *Console.WriteLine()* [statement](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/statements) allows us to write our string to the console. Let’s break this down. 
+
+> * The [Console](https://docs.microsoft.com/dotnet/api/system.console?view=net-6.0) is what you can use to output strings. 
+> * The [WriteLine() method](https://docs.microsoft.com/dotnet/api/system.console.writeline?view=net-6.0) writes whatever data you specify in the parenthesis to the output. 
+
+#!markdown
+
+## Using variables with strings
+### Tell the aliens more about yourself
+Amazing job! Your linguistic partner says you should introduce yourself a bit more so the aliens know what you do. But, she says to only refer to yourself using your name instead of a pronoun like I, because she can’t translate pronouns yet. Replace all the instances of *myName* with your name and hit run. 
+
+#!csharp
+
+Console.WriteLine("Hi extraterrestrials, my name is myName."); 
+Console.WriteLine("myName is a researcher."); 
+Console.WriteLine("myName studies language."); 
+
+#!markdown
+
+### Introduce the aliens to others
+Great job! Now other members of your research team want to use your code to introduce themselves. But, going through and changing all the *myName*s with the name of each researcher is tedious and is likely to cause a mistake. Notice how in the strings we want to output, the only thing that changes is the myName. One way to simplify our code and reduce the room for error is by using a variable. A **variable** is a symbol you can use to run the same code with different values. 
+
+Instead of replacing every *myName*, let’s create a string variable called name that we can assign to a different name one time and it will update all the myNames throughout the introduction! Now, replace all the instances of *myName* with our new variable, *name*. 
+
+#!csharp
+
+string name = "myName";
+
+Console.WriteLine("Hi extraterrestrials, my name is myName."); 
+Console.WriteLine("myName is a researcher."); 
+Console.WriteLine("myName studies language."); 
+
+#!markdown
+
+Now, you can set name to the name of whoever is being introduced. Try replacing *myName* with the name Joon and running it.  
+
+The above lines with Console.WriteLine are **string literals**, which means it is text that represents a constant string. 
+
+#!markdown
+
+## Let's translate a message
+It’s time to start translating. Your linguistic partner gives you the following graph that includes all the words that she’s been able to translate in language X and their English translation. We’re going to use this data to translate the alien messages. 
+
+### Language data
+
+#!csharp
+
+var languageData = new Dictionary<string, string>
+{
+  ["Yoish"] = "the aliens",
+  ["shwaye"] = "crashed",
+  ["ni"] = "on",
+  ["ceroyash"] = "Earth",
+  ["oppor"] = "need",
+  ["shioy"] = "humans",
+  ["abree"] = "help",
+  ["coierm"] = "to go",
+  ["veiesht"] = "home",
+  ["shir"] = "can",
+  ["argsha"] = "spaceship",
+  ["lleog"] = "dirt",
+  ["afala"] = "tree",
+  ["eshteve"] = "walk",
+  ["blarg"] = "speak",
+  ["efellesh"] = "peace",
+  ["nomschce"] = "want",
+  ["warshel"] = "please"
+};
+languageData
+
+#!markdown
+
+Looks like the aliens are sending their first message:
+### "warshel abree yoish" 
+
+#!markdown
+
+For our first translation, let’s replace each language X word with its English word counterpart. To do this, we’ll use the [String.Replace method](https://docs.microsoft.com/dotnet/api/system.string.replace?view=net-6.0). To use this method correctly, we pass in the string we want to replace and the replacement string. Run the cell below to see how it works. 
+
+Here's an example:
+
+#!csharp
+
+String stringName = “He is cold”; 
+
+// Below, we replace "He" with "She" and "cold" with "cool"
+stringName.Replace("He”, "She”).Replace(“cold”,”cool”); 
+
+#!markdown
+
+>Notice how you can put multiple Replaces in one statement
+
+Now, let's try this out with the alien messsage.
+
+#!csharp
+
+//here’s the alien message 
+
+string message = "Warshel abree yoish";
+
+//try replacing the words in language x with their English counterparts using the Replace method 
+
+#!markdown
+
+## Let's use loops
+
+Looks like a second alien message is incoming:
+### Yoish shwaye ni ceroyash. Yoish oppor shioy abree coierm veiesht. Shir shioy abree yoish? 
+Replacing words one by one is a bit tedious for longer messages like this. We can make this process more efficient. Imagine if we could write a piece of code that goes through an unknown alien message word-by-word, finds the English translation for each word, and outputs the translated English message. Luckily we can by using loops. **Loops** are a way to repeat an action multiple times. 
+
+Below you’ll find a **switch statement** that takes in an alien word as input, and outputs the English translation. In general, a [switch statement](https://docs.microsoft.com/dotnet/csharp/language-reference/statements/selection-statements#the-switch-statement) matches the input against a series of cases and the output is dependent upon which case is matched. In order to translate the message, we’ll use this switch statement to help us match the alien words and receive the proper English word back. 
+
+#!csharp
+
+string Translation(string xWord)
+{
+    switch (xWord)
+    {
+        case "yoish":
+            return "the aliens ";
+            break;
+
+        case "shwaye":
+            return "crashed ";
+            break;
+            
+        case "ni":
+            return "on ";
+            break;
+
+        case "ceroyash":
+            return "Earth ";
+            break;
+
+        case "oppor":
+            return "need ";
+            break;
+            
+        case "shioy":
+            return "humans ";
+            break;
+
+        case "abree":
+            return "help ";
+            break;
+
+        case "coierm":
+            return "to go ";
+            break;
+            
+        case "veiesht":
+            return "home ";
+            break;
+
+        case "shir":
+            return "can ";
+            break;
+
+        case "argsha":
+            return "spaceship ";
+            break;
+            
+        case "lleog":
+            return "dirt ";
+            break;
+
+        case "afala":
+            return "trees ";
+            break;
+
+        case "eshteve":
+            return "walk ";
+            break;
+
+        case "blarg":
+            return "speak ";
+            break;
+            
+        case "efellesh":
+            return "peace ";
+            break;
+            
+        case "nomshce":
+            return "want ";
+            break;
+
+        case "warshel":
+            return "please ";
+            break;
+            
+        case "yoishel":
+            return "home ";
+            break;
+            
+        default:
+            return "none ";
+            break;
+    }
+}
+
+#!markdown
+
+Before we can loop over the words in the sentence, we need to break up the message string into words. To do this, we will use the [String.Split()](https://docs.microsoft.com/dotnet/api/system.string.split?view=net-6.0) method. We pass the String.Split() method a delineating character that the method will use to split the string into substrings. In the case of a sentence, we can choose a space ‘ ‘ as the delineating character because each word is separated by a space. In the cell below, use String.Split() to split up the sentence string into word substrings. 
+
+#!markdown
+
+Add image showing how Split works
+
+#!markdown
+
+Now that we can split our sentence string into word substrings, it’s time to loop over them and translate! To do this, we’ll use a [foreach loop](https://docs.microsoft.com/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement). This is a special type of loop that executes a statement for each element in a group of that type of element. 
+
+The syntax works like this: 
+
+#!csharp
+
+string[] variable_collection;
+
+foreach(string variable_name in variable_collection) 
+{ 
+     // statements to be executed 
+} 
+
+#!markdown
+
+>The **data type** in our case will be strings. The **variable name** can be anything, but to ensure our code is understandable, let’s call it word. And the **collection variable** will our list of language X words. The statements to be executed must be wrapped in curly brackets. 
+
+Now that you can split the alien sentence strings into word substrings and we know how to loop through these strings, it’s time to translate the alien message!
+
+#!csharp
+
+string alienMessage = "yoish shwaye ni ceroyash yoish oppor shioy abree coierm veiesht shir shioy abree yoish"; 
+
+// split alienMessage into word substrings and store it in a variable called words 
+string[] words = alienMessage.Split(' '); 
+
+// Here is where we will loop through each word in words and translate them  
+foreach(string word in words) 
+{ 
+    //pass the word to the switch statement 
+    Console.Write(Translation(word));
+} 
