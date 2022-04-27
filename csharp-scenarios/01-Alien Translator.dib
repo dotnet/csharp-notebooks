@@ -265,7 +265,10 @@ The syntax works like this:
 
 #!csharp
 
-string[] variable_collection;
+string sentence = "this is an example";
+
+// split the string into substrings
+string[] variable_collection = sentence.Split(' ');
 
 foreach(string variable_name in variable_collection) 
 { 
@@ -291,3 +294,7 @@ foreach(string word in words)
     //pass the word to the switch statement 
     Console.Write(Translation(word));
 } 
+
+#!markdown
+
+Great job! You can now relay this message as well as your translation tool to the Alien Response Team so they can get the aliens home. Mission succeeded!
