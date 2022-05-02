@@ -1,19 +1,21 @@
-# .NET Interactive Notebooks for C#
+# .NET Інтерактивні Блокноти для C#
 
-Welcome to the home of .NET interactive notebooks for C#!
+Вітаємо у домашньому репозиторії .NET Інтерактивні Блокноти для C# українською!
 
-## How to Install
+## Як Встановити
 
-1. Download the .NET Coding Pack for VS Code for [Windows](https://aka.ms/dotnet-coding-pack-win) or [macOS](https://aka.ms/dotnet-coding-pack-mac).
-2. Install the [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) extension.
+0. Завантажте [Visual Studio Code](https://code.visualstudio.com/download)
+1. Завантажте .NET Coding Pack для VS Code на [Windows](https://aka.ms/dotnet-coding-pack-win) чи на [macOS](https://aka.ms/dotnet-coding-pack-mac).
+2. Завантажте [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) розширення для Visual Studio Code.
 
-For more information and resources, visit [Learn to code C#](https://dotnet.microsoft.com/learntocode).
+Більше інформації по вивчені C# знайдете за посиланням [Learn to code C#](https://dotnet.microsoft.com/learntocode).
 
 ## C# 101
 
-Download or clone this repo and open the `csharp-101` folder in VS Code to get started with the C# 101 notebooks. Or, if you want just tap on one of the Notebook links below and automatically have it open in VS Code!
+Завантажте або клонуйте це репозиторій та відкрийте папку `csharp-101` у VS Code, щоб розпочати роботу з блокнотами C# 101.
+<!--- # (Або, якщо ви хочете, просто торкніться одного з посилань на блокнот нижче і автоматично відкрийте його в VS Code!)
 
-| # | Topic                         | Notebook Link         | Video Link | Documentation |
+| # | Модуль                         | Notebook Link         | Video Link | Документація |
 |---|-------------------------------|-----------------------|------------|---------------|
 1  | Hello World                   | [01 Notebook](https://tinyurl.com/csharp-notebook01) | [01 Video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
 2  | The Basics of Strings         | [02 Notebook](https://tinyurl.com/csharp-notebook02) | [02 Video](https://www.youtube.com/watch?v=JSpC7Cz64h0&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=3) | [Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
@@ -30,18 +32,18 @@ Download or clone this repo and open the `csharp-101` folder in VS Code to get s
 13 | Objects and Classes           | [13 Notebook](https://tinyurl.com/csharp-notebook13)| [13 Video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 14 | Methods and Members           | [14 Notebook](https://tinyurl.com/csharp-notebook14) | [14 Video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 15 | Methods and Exceptions        | [15 Notebook](https://tinyurl.com/csharp-notebook15) | [15 Video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
+--->
+## .NET Фундація
 
-## .NET Foundation
+.NET Інтерактивні Блокноти для C# це проєкт [.NET Foundation](https://www.dotnetfoundation.org/projects).
 
-.NET Interative Notebooks for C# is a [.NET Foundation](https://www.dotnetfoundation.org/projects) project.
+Це не єдиний проєкт .NET Foundation на GitHub.
 
-There are many .NET related projects on GitHub.
+- [.NET домашній репозиторій](https://github.com/Microsoft/dotnet) - поислання на 100 .NET projects, від Microsoft і спільноти.
+- [ASP.NET Core home](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.1) - найкраще місце, щоб почати вивчати ASP.NET Core.
 
-- [.NET home repo](https://github.com/Microsoft/dotnet) - links to 100s of .NET projects, from Microsoft and the community.
-- [ASP.NET Core home](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.1) - the best place to start learning about ASP.NET Core.
+Цей проект дотримується кодексу поведінки, визначений [Contributor Covenant](http://contributor-covenant.org/) щоб прояснити очікувану поведінку в нашій громаді. Для отримання додаткової інформації див [.NET Foundation Code of Conduct](http://www.dotnetfoundation.org/code-of-conduct).
 
-This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/) to clarify expected behavior in our community. For more information, see the [.NET Foundation Code of Conduct](http://www.dotnetfoundation.org/code-of-conduct).
+## Ліцензія
 
-## License
-
-.NET (including the csharp-notebooks repo) is licensed under the [MIT](LICENSE) license.
+.NET (включаючи репозиторії csharp-notebooks) ліцензований згідно з [MIT](LICENSE) ліцензією.
