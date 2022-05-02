@@ -1,6 +1,6 @@
 # .NET Інтерактивні Блокноти для C#
 
-Вітаємо на курсі .NET Інтерактивні Блокноти для C#!
+Вітаємо у домашньому репозиторії .NET Інтерактивні Блокноти для C# українською!
 
 ## Як Встановити
 
@@ -33,17 +33,17 @@
 14 | Methods and Members           | [14 Notebook](https://tinyurl.com/csharp-notebook14) | [14 Video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 15 | Methods and Exceptions        | [15 Notebook](https://tinyurl.com/csharp-notebook15) | [15 Video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 --->
-## .NET Foundation
+## .NET Фундація
 
-.NET Interative Notebooks for C# is a [.NET Foundation](https://www.dotnetfoundation.org/projects) project.
+.NET Інтерактивні Блокноти для C# це проєкт [.NET Foundation](https://www.dotnetfoundation.org/projects).
 
-There are many .NET related projects on GitHub.
+Це не єдиний проєкт .NET Foundation на GitHub.
 
-- [.NET home repo](https://github.com/Microsoft/dotnet) - links to 100s of .NET projects, from Microsoft and the community.
-- [ASP.NET Core home](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.1) - the best place to start learning about ASP.NET Core.
+- [.NET домашній репозиторій](https://github.com/Microsoft/dotnet) - поислання на 100 .NET projects, від Microsoft і спільноти.
+- [ASP.NET Core home](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.1) - найкраще місце, щоб почати вивчати ASP.NET Core.
 
-This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/) to clarify expected behavior in our community. For more information, see the [.NET Foundation Code of Conduct](http://www.dotnetfoundation.org/code-of-conduct).
+Цей проект дотримується кодексу поведінки, визначений [Contributor Covenant](http://contributor-covenant.org/) щоб прояснити очікувану поведінку в нашій громаді. Для отримання додаткової інформації див [.NET Foundation Code of Conduct](http://www.dotnetfoundation.org/code-of-conduct).
 
-## License
+## Ліцензія
 
-.NET (including the csharp-notebooks repo) is licensed under the [MIT](LICENSE) license.
+.NET (включаючи репозиторії csharp-notebooks) ліцензований згідно з [MIT](LICENSE) ліцензією.
