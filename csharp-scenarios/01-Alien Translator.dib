@@ -93,31 +93,33 @@ The above lines with Console.WriteLine are **string literals**, which means it i
 It’s time to start translating. Your linguistic partner gives you the following graph that includes all the words that she’s been able to translate in language X and their English translation. We’re going to use this data to translate the alien messages. 
 
 ### Language data
+This data is organized into a [switch expression](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/switch-expression). This **switch statement** takes in an alien word as input, and outputs the English translation. In general, a switch expression matches the input against a series of cases and the output is dependent upon which case is matched. In order to translate the message, we’ll use this switch expression to help us match the alien words and receive the proper English word back. 
 
 #!csharp
 
-var languageData = new Dictionary<string, string>
+String ToEnglish(string word) => word switch
 {
-  ["Yoish"] = "the aliens",
-  ["shwaye"] = "crashed",
-  ["ni"] = "on",
-  ["ceroyash"] = "Earth",
-  ["oppor"] = "need",
-  ["shioy"] = "humans",
-  ["abree"] = "help",
-  ["coierm"] = "to go",
-  ["veiesht"] = "home",
-  ["shir"] = "can",
-  ["argsha"] = "spaceship",
-  ["lleog"] = "dirt",
-  ["afala"] = "tree",
-  ["eshteve"] = "walk",
-  ["blarg"] = "speak",
-  ["efellesh"] = "peace",
-  ["nomschce"] = "want",
-  ["warshel"] = "please"
+    "yoish"     => "the aliens ",
+    "shwaye"    => "crashed ",
+    "ni"        => "on ",
+    "ceroyash"  => "Earth ",
+    "oppor"     => "need ",
+    "shioy"     => "humans ",
+    "abree"     => "help ",
+    "coierm"    => "to go ",
+    "veiesht"   => "home ",
+    "shir"      => "can ",
+    "argsha"    => "spaceship ",
+    "lleog"     => "dirt ",
+    "afala"     => "trees ",
+    "eshteve"   => "walk ",
+    "blarg"     => "speak ",
+    "efellesh"  => "peace ",
+    "nomshce"   => "want ",
+    "warshel"   => "please ",
+    "yoishel"   => "Alien planet ",
+    _           => "Unknown "
 };
-languageData
 
 #!markdown
 
@@ -159,95 +161,7 @@ Looks like a second alien message is incoming:
 ### Yoish shwaye ni ceroyash. Yoish oppor shioy abree coierm veiesht. Shir shioy abree yoish? 
 Replacing words one by one is a bit tedious for longer messages like this. We can make this process more efficient. Imagine if we could write a piece of code that goes through an unknown alien message word-by-word, finds the English translation for each word, and outputs the translated English message. Luckily we can by using loops. **Loops** are a way to repeat an action multiple times. 
 
-Below you’ll find a **switch statement** that takes in an alien word as input, and outputs the English translation. In general, a [switch statement](https://docs.microsoft.com/dotnet/csharp/language-reference/statements/selection-statements#the-switch-statement) matches the input against a series of cases and the output is dependent upon which case is matched. In order to translate the message, we’ll use this switch statement to help us match the alien words and receive the proper English word back. 
-
-#!csharp
-
-string Translation(string xWord)
-{
-    switch (xWord)
-    {
-        case "yoish":
-            return "the aliens ";
-            break;
-
-        case "shwaye":
-            return "crashed ";
-            break;
-            
-        case "ni":
-            return "on ";
-            break;
-
-        case "ceroyash":
-            return "Earth ";
-            break;
-
-        case "oppor":
-            return "need ";
-            break;
-            
-        case "shioy":
-            return "humans ";
-            break;
-
-        case "abree":
-            return "help ";
-            break;
-
-        case "coierm":
-            return "to go ";
-            break;
-            
-        case "veiesht":
-            return "home ";
-            break;
-
-        case "shir":
-            return "can ";
-            break;
-
-        case "argsha":
-            return "spaceship ";
-            break;
-            
-        case "lleog":
-            return "dirt ";
-            break;
-
-        case "afala":
-            return "trees ";
-            break;
-
-        case "eshteve":
-            return "walk ";
-            break;
-
-        case "blarg":
-            return "speak ";
-            break;
-            
-        case "efellesh":
-            return "peace ";
-            break;
-            
-        case "nomshce":
-            return "want ";
-            break;
-
-        case "warshel":
-            return "please ";
-            break;
-            
-        case "yoishel":
-            return "home ";
-            break;
-            
-        default:
-            return "none ";
-            break;
-    }
-}
+We'll use the ToEnglish **switch expression** above to translate each Language X word in the alien message to English.
 
 #!markdown
 
@@ -291,8 +205,8 @@ string[] words = alienMessage.Split(' ');
 // Here is where we will loop through each word in words and translate them  
 foreach(string word in words) 
 { 
-    //pass the word to the switch statement 
-    Console.Write(Translation(word));
+    //pass the word to the switch expression here and print the word using Console.WriteLine 
+    
 } 
 
 #!markdown
