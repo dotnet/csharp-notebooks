@@ -20,7 +20,7 @@ In this beginner-friendly coding challenge you’ll learn all about strings and 
 
 #!markdown
 
-[Question] Can we add a video here?
+![aliens](./images/alien-ship.png)
 
 #!markdown
 
@@ -166,10 +166,6 @@ We'll use the ToEnglish **switch expression** above to translate each Language X
 #!markdown
 
 Before we can loop over the words in the sentence, we need to break up the message string into words. To do this, we will use the [String.Split()](https://docs.microsoft.com/dotnet/api/system.string.split?view=net-6.0) method. We pass the String.Split() method a delineating character that the method will use to split the string into substrings. In the case of a sentence, we can choose a space ‘ ‘ as the delineating character because each word is separated by a space. In the cell below, use String.Split() to split up the sentence string into word substrings. 
-
-#!markdown
-
-Add image showing how Split works
 
 #!markdown
 
