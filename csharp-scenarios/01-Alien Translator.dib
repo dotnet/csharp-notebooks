@@ -169,6 +169,10 @@ Before we can loop over the words in the sentence, we need to break up the messa
 
 #!markdown
 
+![Split Method Image](https://raw.githubusercontent.com/katiesavage/csharp-notebooks/main/csharp-scenarios/images/split-method.png)
+
+#!markdown
+
 Now that we can split our sentence string into word substrings, it’s time to loop over them and translate! To do this, we’ll use a [foreach loop](https://docs.microsoft.com/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement). This is a special type of loop that executes a statement for each element in a group of that type of element. 
 
 The syntax works like this: 
