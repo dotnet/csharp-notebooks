@@ -1,0 +1,18 @@
+[
+{
+    "Salary": 3000000,
+    "Name": "Adam Larsson"
+},
+{
+   "Salary": 1600000,
+   "Name": "Andrej Sustr"
+}, 
+{
+   "Salary": 2200000,
+   "Name": "Antoine Roussel"
+}, 
+{
+   "Salary": 950000,
+   "Name": "Anton Rodin"
+}
+]
