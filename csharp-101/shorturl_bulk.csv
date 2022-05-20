@@ -1,0 +1,16 @@
+URL,Domain,Alias
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/01-Hello%20World.ipynb,ntbk.io,csharp101-notebook01
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/02-The%20Basics%20of%20Strings.ipynb,ntbk.io,csharp101-notebook02
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/03-Searching%20Strings.ipynb,ntbk.io,csharp101-notebook03
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/04-Numbers%20and%20Integer%20Math.ipynb,ntbk.io,csharp101-notebook04
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/05-Numbers%20and%20Integer%20Precision.ipynb,ntbk.io,csharp101-notebook05
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/06-Numbers%20and%20Decimals.ipynb,ntbk.io,csharp101-notebook06
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/07-Branches%20(if).ipynb,ntbk.io,csharp101-notebook07
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/08-What%20Are%20Loops.ipynb,ntbk.io,csharp101-notebook08
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/09-Combining%20Branches%20and%20Loops.ipynb,ntbk.io,csharp101-notebook09
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/10-Arrays%2C%20Lists%2C%20and%20Collections.ipynb,ntbk.io,csharp101-notebook10
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/11-%20Search%2C%20Sort%2C%20and%20Index%20Lists.ipynb,ntbk.io,csharp101-notebook11
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/12-Lists%20of%20Other%20Types.ipynb,ntbk.io,csharp101-notebook12
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/13-Objects%20and%20Classes.ipynb,ntbk.io,csharp101-notebook13
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/14-Methods%20and%20Members.ipynb,ntbk.io,csharp101-notebook14
+vscode://ms-dotnettools.dotnet-interactive-vscode/openNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/15-Methods%20and%20Exceptions.ipynb,ntbk.io,csharp101-notebook15
