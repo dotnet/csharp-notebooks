@@ -4,8 +4,13 @@ Welcome to the home of .NET interactive notebooks for C#!
 
 ## How to Install
 
+### VS Code
 1. Download the .NET Coding Pack for VS Code for [Windows](https://aka.ms/dotnet-coding-pack-win) or [macOS](https://aka.ms/dotnet-coding-pack-mac).
 2. Install the [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) extension.
+
+### Visual Studio
+1. Download and install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
+2. Download and install [Notebook Editor Extension](https://marketplace.visualstudio.com/items?itemName=MLNET.notebook)
 
 For more information and resources, visit [Learn to code C#](https://dotnet.microsoft.com/learntocode).
 
@@ -30,6 +35,35 @@ Download or clone this repo and open the `csharp-101` folder in VS Code to get s
 13 | Objects and Classes           | [13 Notebook](https://ntbk.io/csharp101-notebook13)| [13 Video](https://www.youtube.com/watch?v=TzgxcAiHCWA&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=16) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 14 | Methods and Members           | [14 Notebook](https://ntbk.io/csharp101-notebook14) | [14 Video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 15 | Methods and Exceptions        | [15 Notebook](https://ntbk.io/csharp101-notebook15) | [15 Video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
+
+## Machine Learning
+
+Download or clone this repo and open the `machine-learning` folder in Visual Studio 2022 to get started with the machine-learning notebooks. Or, if you want just tap on one of the Notebook links below and automatically have it open in Visual Studio!
+
+### Getting Started Series
+
+| # | Topic                                      | Notebook Link         |
+|---|--------------------------------------------|-----------------------|
+1  | Intro to Machine Learning                   | [01 Notebook](https://ntbk.io/ml-01-intro) 
+2  | Data Prep and Feature Engineering           | [02 Notebook](https://ntbk.io/ml-02-data) 
+3  | Training and AutoML                         | [03 Notebook](https://ntbk.io/ml-03-training) 
+4  | Model Evaluation                            | [04 Notebook](https://ntbk.io/ml-04-evaluation) 
+
+### Reference Notebooks
+| # | Topic                                      | Notebook Link         |
+|---|--------------------------------------------|-----------------------|
+REF | Data Processing with DataFrame             |[Data Frame](https://ntbk.io/ml-ref-data-frame)                       
+REF | Graphs and Visualizations                  |[Visualizations](https://ntbk.io/ml-ref-visualizations)
+REF | Kaggle Competitions (Titanic Dataset)      |[Kaggle](https://ntbk.io/ml-ref-kaggle-titanic)                       
+
+### End to End (E2E) Notebooks for examples of the entire ML process presented in a notebook.
+| # | Topic                                      | Notebook Link         |
+|---|--------------------------------------------|-----------------------|
+E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)                      
+E2E | Forecasting using Regression (Luna Dataset)| [Lune E2E Regression](https://ntbk.io/ml-e2e-luna-regression)                      
+E2E | Forecasting using SSA (Luna Dataset)       | [Lune E2E SSA](https://ntbk.io/ml-e2e-luna-ssa)                   
+E2E | Regression using AutoML (Taxi Dataset)     | [Taxi E2E AutoML](https://ntbk.io/ml-e2e-taxi)                   
+
 
 ## .NET Foundation
 
