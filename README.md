@@ -56,7 +56,7 @@ REF | Data Processing with DataFrame             |[Data Frame](https://ntbk.io/m
 REF | Graphs and Visualizations                  |[Visualizations](https://ntbk.io/ml-ref-visualizations)
 REF | Kaggle Competitions (Titanic Dataset)      |[Kaggle](https://ntbk.io/ml-ref-kaggle-titanic)                       
 
-### End to End (E2E) Notebooks for examples of the entire ML process presented in a notebook.
+### End to End (E2E) Notebooks  - for examples of the entire ML process.
 | # | Topic                                      | Notebook Link         |
 |---|--------------------------------------------|-----------------------|
 E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)                      
