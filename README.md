@@ -49,23 +49,22 @@ Download or clone this repo and open the `machine-learning` folder in Visual Stu
 1  | Intro to Machine Learning                   | [01 Notebook](https://ntbk.io/ml-01-intro) 
 2  | Data Prep and Feature Engineering           | [02 Notebook](https://ntbk.io/ml-02-data) 
 3  | Training and AutoML                         | [03 Notebook](https://ntbk.io/ml-03-training) 
-4  | Model Evaluation                            | [04 Notebook](https://ntbk.io/ml-04-evaluation) 
+4  | Model Evaluation                            | [04 Notebook](https://ntbk.io/ml-04-evaluation)                       
+
+### End to End (E2E) Notebooks  - examples of the entire ML process.
+| # | Topic                                      | Notebook Link         |
+|---|--------------------------------------------|-----------------------|
+E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)                      
+E2E | Forecasting using Regression (Luna Dataset)| [Luna E2E Regression](https://ntbk.io/ml-e2e-luna-regression)                      
+E2E | Forecasting using SSA (Luna Dataset)       | [Luna E2E SSA](https://ntbk.io/ml-e2e-luna-ssa)                   
+E2E | Regression using AutoML (Taxi Dataset)     | [Taxi E2E AutoML](https://ntbk.io/ml-e2e-taxi)                   
 
 ### Reference Notebooks
 | # | Topic                                      | Notebook Link         |
 |---|--------------------------------------------|-----------------------|
 REF | Data Processing with DataFrame             |[Data Frame](https://ntbk.io/ml-ref-data-frame)                       
 REF | Graphs and Visualizations                  |[Visualizations](https://ntbk.io/ml-ref-visualizations)
-REF | Kaggle Competitions (Titanic Dataset)      |[Kaggle](https://ntbk.io/ml-ref-kaggle-titanic)                       
-
-### End to End (E2E) Notebooks  - for examples of the entire ML process.
-| # | Topic                                      | Notebook Link         |
-|---|--------------------------------------------|-----------------------|
-E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)                      
-E2E | Forecasting using Regression (Luna Dataset)| [Lune E2E Regression](https://ntbk.io/ml-e2e-luna-regression)                      
-E2E | Forecasting using SSA (Luna Dataset)       | [Lune E2E SSA](https://ntbk.io/ml-e2e-luna-ssa)                   
-E2E | Regression using AutoML (Taxi Dataset)     | [Taxi E2E AutoML](https://ntbk.io/ml-e2e-taxi)                   
-
+REF | Kaggle Competitions (Titanic Dataset)      |[Kaggle](https://ntbk.io/ml-ref-kaggle-titanic) 
 
 ## .NET Foundation
 
