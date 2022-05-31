@@ -40,7 +40,7 @@ Download or clone this repo and open the `csharp-101` folder in VS Code to get s
 
 Download or clone this repo and open the `machine-learning` folder in Visual Studio 2022 to get started with the machine-learning notebooks. Or, if you want just tap on one of the Notebook links below and automatically have it open in Visual Studio!
 
-**Links below require [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) and [Notebook Editor Extension](https://marketplace.visualstudio.com/items?itemName=MLNET.notebook) 0.3.4 or greater **
+**Links below require [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) and [Notebook Editor Extension](https://marketplace.visualstudio.com/items?itemName=MLNET.notebook) 0.3.4 or greater**
 
 ### Getting Started Series
 
