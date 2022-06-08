@@ -44,27 +44,27 @@ Download or clone this repo and open the `machine-learning` folder in Visual Stu
 
 ### Getting Started Series
 
-| # | Topic                                      | Notebook Link         |
-|---|--------------------------------------------|-----------------------|
-1  | Intro to Machine Learning                   | [01 Notebook](https://ntbk.io/ml-01-intro) 
-2  | Data Prep and Feature Engineering           | [02 Notebook](https://ntbk.io/ml-02-data) 
-3  | Training and AutoML                         | [03 Notebook](https://ntbk.io/ml-03-training) 
-4  | Model Evaluation                            | [04 Notebook](https://ntbk.io/ml-04-evaluation)                       
+| # | Topic                                      | VS Notebook Link                               | Github Link |
+|---|--------------------------------------------|------------------------------------------------|-------------|
+1  | Intro to Machine Learning                   | [01 Notebook](https://ntbk.io/ml-01-intro)     | [01 Notebook](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/01-Intro%20to%20Machine%20Learning.ipynb) 
+2  | Data Prep and Feature Engineering           | [02 Notebook](https://ntbk.io/ml-02-data)      | [02 Notebook](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/02-Data%20Preparation%20and%20Feature%20Engineering.ipynb)
+3  | Training and AutoML                         | [03 Notebook](https://ntbk.io/ml-03-training)  | [03 Notebook](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/03-Training%20and%20AutoML.ipynb)
+4  | Model Evaluation                            | [04 Notebook](https://ntbk.io/ml-04-evaluation)| [04 Notebook](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/04-Model%20Evaluation.ipynb)                      
 
 ### End to End (E2E) Notebooks  - examples of the entire ML process.
-| # | Topic                                      | Notebook Link         |
-|---|--------------------------------------------|-----------------------|
-E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)                      
-E2E | Forecasting using Regression (Luna Dataset)| [Luna E2E Regression](https://ntbk.io/ml-e2e-luna-regression)                      
-E2E | Forecasting using SSA (Luna Dataset)       | [Luna E2E SSA](https://ntbk.io/ml-e2e-luna-ssa)                   
-E2E | Regression using AutoML (Taxi Dataset)     | [Taxi E2E AutoML](https://ntbk.io/ml-e2e-taxi)                   
+| # | Topic                                      | VS Notebook Link                                             | Github Link |
+|---|--------------------------------------------|--------------------------------------------------------------|-------------|
+E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)               | [Iris E2E AutoML](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Classification%20with%20Iris%20Dataset.ipynb)           
+E2E | Forecasting using Regression (Luna Dataset)| [Luna E2E Regression](https://ntbk.io/ml-e2e-luna-regression)| [Luna E2E Regression](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Forecasting%20using%20Regression%20with%20Luna%20Dataset.ipynb)                     
+E2E | Forecasting using SSA (Luna Dataset)       | [Luna E2E SSA](https://ntbk.io/ml-e2e-luna-ssa)              | [Luna E2E SSA](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Forecasting%20using%20SSA%20with%20Luna%20Dataset.ipynb)   
+E2E | Regression using AutoML (Taxi Dataset)     | [Taxi E2E AutoML](https://ntbk.io/ml-e2e-taxi)               | [Taxi E2E AutoML](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Regression%20with%20Taxi%20Dataset.ipynb)          
 
 ### Reference Notebooks
-| # | Topic                                      | Notebook Link         |
-|---|--------------------------------------------|-----------------------|
-REF | Data Processing with DataFrame             |[Data Frame](https://ntbk.io/ml-ref-data-frame)                       
-REF | Graphs and Visualizations                  |[Visualizations](https://ntbk.io/ml-ref-visualizations)
-REF | Kaggle Competitions (Titanic Dataset)      |[Kaggle](https://ntbk.io/ml-ref-kaggle-titanic) 
+| # | Topic                                      | VS Notebook Link                                      | Github Link |
+|---|--------------------------------------------|-------------------------------------------------------|-------------|
+REF | Data Processing with DataFrame             |[Data Frame](https://ntbk.io/ml-ref-data-frame)        | [Data Frame](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/REF-Data%20Processing%20with%20DataFrame.ipynb)               
+REF | Graphs and Visualizations                  |[Visualizations](https://ntbk.io/ml-ref-visualizations)| [Visualizations](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/REF-Graphs%20and%20Visualizations.ipynb)
+REF | Kaggle Competitions (Titanic Dataset)      |[Kaggle](https://ntbk.io/ml-ref-kaggle-titanic)        | [Kaggle](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/REF-Kaggle%20with%20Titanic%20Dataset.ipynb) 
 
 ## .NET Foundation
 
