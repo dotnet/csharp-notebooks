@@ -52,12 +52,14 @@ Download or clone this repo and open the `machine-learning` folder in Visual Stu
 4  | Model Evaluation                            | [04 Notebook](https://ntbk.io/ml-04-evaluation)| [04 Notebook](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/04-Model%20Evaluation.ipynb)                      
 
 ### End to End (E2E) Notebooks  - examples of the entire ML process.
-| # | Topic                                      | VS Notebook Link                                             | Github Link |
-|---|--------------------------------------------|--------------------------------------------------------------|-------------|
-E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)               | [Iris E2E AutoML](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Classification%20with%20Iris%20Dataset.ipynb)           
-E2E | Forecasting using Regression (Luna Dataset)| [Luna E2E Regression](https://ntbk.io/ml-e2e-luna-regression)| [Luna E2E Regression](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Forecasting%20using%20Regression%20with%20Luna%20Dataset.ipynb)                     
-E2E | Forecasting using SSA (Luna Dataset)       | [Luna E2E SSA](https://ntbk.io/ml-e2e-luna-ssa)              | [Luna E2E SSA](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Forecasting%20using%20SSA%20with%20Luna%20Dataset.ipynb)   
-E2E | Regression using AutoML (Taxi Dataset)     | [Taxi E2E AutoML](https://ntbk.io/ml-e2e-taxi)               | [Taxi E2E AutoML](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Regression%20with%20Taxi%20Dataset.ipynb)          
+| # | Topic                                      | VS Notebook Link                                                          | Github Link |
+|---|--------------------------------------------|---------------------------------------------------------------------------|-------------|
+E2E | Classification using AutoML (Iris Dataset) | [Iris E2E AutoML](https://ntbk.io/ml-e2e-iris)                            | [Iris E2E AutoML](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Classification%20with%20Iris%20Dataset.ipynb)           
+E2E | Forecasting using Regression (Luna Dataset)| [Luna E2E Regression](https://ntbk.io/ml-e2e-luna-regression)             | [Luna E2E Regression](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Forecasting%20using%20Regression%20with%20Luna%20Dataset.ipynb)                     
+E2E | Forecasting using SSA (Luna Dataset)       | [Luna E2E SSA](https://ntbk.io/ml-e2e-luna-ssa)                           | [Luna E2E SSA](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Forecasting%20using%20SSA%20with%20Luna%20Dataset.ipynb)   
+E2E | Regression using AutoML (Taxi Dataset)     | [Taxi E2E AutoML](https://ntbk.io/ml-e2e-taxi)                            | [Taxi E2E AutoML](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Regression%20with%20Taxi%20Dataset.ipynb)          
+E2E | Text Classification API (Yelp Dataset)     | [Text Classification API](https://ntbk.io/ml-e2e-text-classification-api) | [Text Classification API](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Text-Classification-API-with-Yelp-Dataset.ipynb)          
+
 
 ### Reference Notebooks
 | # | Topic                                      | VS Notebook Link                                      | Github Link |
