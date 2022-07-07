@@ -1,0 +1,78 @@
+[
+  {
+    "Salary": 3000000,
+    "Name": "Adam Larsson"
+  },
+  {
+    "Salary": 1600000,
+    "Name": "Andrej Sustr"
+  },
+  {
+    "Salary": 2200000,
+    "Name": "Antoine Roussel"
+  },
+  {
+    "Salary": 950000,
+    "Name": "Anton Rodin"
+  },
+  {
+    "Salary": 4500000,
+    "Name": "Anton Stralman"
+  },
+  {
+    "Salary": 717500,
+    "Name": "Brandon Carlo"
+  },
+  {
+    "Salary": 650000,
+    "Name": "Brian Lashoff"
+  },
+  {
+    "Salary": 925000,
+    "Name": "David Pastrnak"
+  },
+  {
+    "Salary": 750000,
+    "Name": "Greg Pateryn"
+  },
+  {
+    "Salary": 742500,
+    "Name": "Jaccob Slavin"
+  },
+  {
+    "Salary": 5500000,
+    "Name": "Justin Faulk"
+  },
+  {
+    "Salary": 8000000,
+    "Name": "Kyle Okposo"
+  },
+  {
+    "Salary": 792500,
+    "Name": "Oskar Sundqvist"
+  },
+  {
+    "Salary": 600000,
+    "Name": "Patrick Cannone"
+  },
+  {
+    "Salary": 4000000,
+    "Name": "Radko Gudas"
+  },
+  {
+    "Salary": 4250000,
+    "Name": "Roman Josi"
+  },
+  {
+    "Salary": 2250000,
+    "Name": "Roman Polak"
+  },
+  {
+    "Salary": 600000,
+    "Name": "Seth Helgeson"
+  },
+  {
+    "Salary": 600000,
+    "Name": "Tim Schaller"
+  }
+]
