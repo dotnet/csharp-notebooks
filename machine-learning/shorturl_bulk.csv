@@ -1,0 +1,13 @@
+URL,Domain,Alias
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/01-Intro%20to%20Machine%20Learning.ipynb,ntbk.io,ml-01-intro
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/02-Data Preparation and Feature Engineering.ipynb,ntbk.io,ml-02-data
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/03-Training and AutoML.ipynb,ntbk.io,ml-03-training
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/04-Model Evaluation.ipynb,ntbk.io,ml-04-evaluation
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/E2E-Classification with Iris Dataset.ipynb,ntbk.io,ml-e2e-iris
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/E2E-Forecasting using Regression with Luna Dataset.ipynb,ntbk.io,ml-e2e-luna-regression
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/E2E-Forecasting using SSA with Luna Dataset.ipynb,ntbk.io,ml-e2e-luna-ssa
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/E2E-Regression with Taxi Dataset.ipynb,ntbk.io,ml-e2e-taxi
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/E2E-Text-Classification-API-with-Yelp-Dataset.ipynb,ntbk.io,ml-e2e-text-classification-api
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/REF-Data Processing with DataFrame.ipynb,ntbk.io,ml-ref-data-frame
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/REF-Graphs and Visualizations.ipynb,ntbk.io,ml-ref-visualizations
+vsnb://OpenNotebook?url=https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/machine-learning/REF-Kaggle with Titanic Dataset.ipynb,ntbk.io,ml-ref-kaggle-titanic
