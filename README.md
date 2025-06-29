@@ -30,6 +30,20 @@ Download or clone this repo and open the `csharp-101` folder in VS Code to get s
 14 | Methods and Members           | [14 Notebook](https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/14-Methods%20and%20Members.ipynb) | [14 Video](https://www.youtube.com/watch?v=xLhm3bEG__c&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=17) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 15 | Methods and Exceptions        | [15 Notebook](https://raw.githubusercontent.com/dotnet/csharp-notebooks/main/csharp-101/15-Methods%20and%20Exceptions.ipynb) | [15 Video](https://www.youtube.com/watch?v=8YsoBBiVVzQ&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=18) | [Object Oriented Coding in C#](https://docs.microsoft.com/dotnet/csharp/fundamentals/tutorials/classes?WT.mc_id=csharpnotebook-35129-website)
 
+
+## Puzzles (C# Scenarios)
+
+Here are a list of the scenarios / programming puzzles in this repository.
+
+These are a good next thing after working through the csharp-101 notebooks.
+
+### Puzzles
+
+| # | Topic                                      | Notebook Link                               | 
+|---|--------------------------------------------|------------------------------------------------|  
+| 1  | Alien Translation                         |  [Alien Translation](./csharp-scenarios/01-Alien-Translator.ipynb) 
+| 2  | Vampire Conundrum                         |  [Vampire Conundrum](./csharp-scenarios/02-Vampire-Conundrum.ipynb)
+
 ## Machine Learning
 
 Download or clone this repo and open the `machine-learning` folder to get started with the machine-learning notebooks.
